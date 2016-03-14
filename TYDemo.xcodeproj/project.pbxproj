@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E60796A2FDF568C15E0CF65 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 698CAD8D24DD575D87656063 /* libPods.a */; };
 		83D7BE951C969A1C00E00955 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D7BE941C969A1C00E00955 /* main.m */; };
 		83D7BE981C969A1C00E00955 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D7BE971C969A1C00E00955 /* AppDelegate.m */; };
 		83D7BE9B1C969A1C00E00955 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D7BE9A1C969A1C00E00955 /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		83D7BEA31C969A1C00E00955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D7BEA11C969A1C00E00955 /* LaunchScreen.storyboard */; };
 		83D7BEAE1C969A1D00E00955 /* TYDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D7BEAD1C969A1D00E00955 /* TYDemoTests.m */; };
 		83D7BEB91C969A1D00E00955 /* TYDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D7BEB81C969A1D00E00955 /* TYDemoUITests.m */; };
+		83D7BEEE1C96A5E600E00955 /* UIView+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D7BEED1C96A5E600E00955 /* UIView+ShortCut.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		698CAD8D24DD575D87656063 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D7BE901C969A1C00E00955 /* TYDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D7BE941C969A1C00E00955 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		83D7BE961C969A1C00E00955 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,10 @@
 		83D7BEB41C969A1D00E00955 /* TYDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TYDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D7BEB81C969A1D00E00955 /* TYDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYDemoUITests.m; sourceTree = "<group>"; };
 		83D7BEBA1C969A1D00E00955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83D7BEEC1C96A5E600E00955 /* UIView+ShortCut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ShortCut.h"; sourceTree = "<group>"; };
+		83D7BEED1C96A5E600E00955 /* UIView+ShortCut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ShortCut.m"; sourceTree = "<group>"; };
+		AD2C4EBC9F8746EFD1DC3E3B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BF298E2907F9C359C7B60518 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E60796A2FDF568C15E0CF65 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,8 @@
 				83D7BEAC1C969A1D00E00955 /* TYDemoTests */,
 				83D7BEB71C969A1D00E00955 /* TYDemoUITests */,
 				83D7BE911C969A1C00E00955 /* Products */,
+				BDDB80BA73931418DBA1FD9A /* Pods */,
+				F5A8466AAE05B5ADB8B54CC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +111,8 @@
 		83D7BE921C969A1C00E00955 /* TYDemo */ = {
 			isa = PBXGroup;
 			children = (
+				83D7BEEC1C96A5E600E00955 /* UIView+ShortCut.h */,
+				83D7BEED1C96A5E600E00955 /* UIView+ShortCut.m */,
 				83D7BE961C969A1C00E00955 /* AppDelegate.h */,
 				83D7BE971C969A1C00E00955 /* AppDelegate.m */,
 				83D7BE991C969A1C00E00955 /* ViewController.h */,
@@ -140,6 +152,23 @@
 			path = TYDemoUITests;
 			sourceTree = "<group>";
 		};
+		BDDB80BA73931418DBA1FD9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF298E2907F9C359C7B60518 /* Pods.debug.xcconfig */,
+				AD2C4EBC9F8746EFD1DC3E3B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F5A8466AAE05B5ADB8B54CC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				698CAD8D24DD575D87656063 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83D7BEBD1C969A1D00E00955 /* Build configuration list for PBXNativeTarget "TYDemo" */;
 			buildPhases = (
+				EAB1D02C58D6C789E0E8CD42 /* Check Pods Manifest.lock */,
 				83D7BE8C1C969A1C00E00955 /* Sources */,
 				83D7BE8D1C969A1C00E00955 /* Frameworks */,
 				83D7BE8E1C969A1C00E00955 /* Resources */,
+				4102A0E7A71F4897642686EB /* Embed Pods Frameworks */,
+				0CF03EE105AB9B38EED2C86A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,11 +297,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CF03EE105AB9B38EED2C86A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4102A0E7A71F4897642686EB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAB1D02C58D6C789E0E8CD42 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		83D7BE8C1C969A1C00E00955 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D7BEEE1C96A5E600E00955 /* UIView+ShortCut.m in Sources */,
 				83D7BE9B1C969A1C00E00955 /* ViewController.m in Sources */,
 				83D7BE981C969A1C00E00955 /* AppDelegate.m in Sources */,
 				83D7BE951C969A1C00E00955 /* main.m in Sources */,
@@ -409,6 +490,7 @@
 		};
 		83D7BEBE1C969A1D00E00955 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF298E2907F9C359C7B60518 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TYDemo/Info.plist;
@@ -420,6 +502,7 @@
 		};
 		83D7BEBF1C969A1D00E00955 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD2C4EBC9F8746EFD1DC3E3B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TYDemo/Info.plist;
@@ -496,6 +579,7 @@
 				83D7BEBF1C969A1D00E00955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83D7BEC01C969A1D00E00955 /* Build configuration list for PBXNativeTarget "TYDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +588,7 @@
 				83D7BEC21C969A1D00E00955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83D7BEC31C969A1D00E00955 /* Build configuration list for PBXNativeTarget "TYDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +597,7 @@
 				83D7BEC51C969A1D00E00955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
