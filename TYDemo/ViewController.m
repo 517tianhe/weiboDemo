@@ -76,6 +76,7 @@
         [totalAttributedString appendAttributedString:[[NSAttributedString alloc]initWithString:@"\n\t"]];
        
     }
+    
     TYAttributedLabel *label2 = [[TYAttributedLabel alloc]init];
     [label2 setAttributedText:totalAttributedString];
     
@@ -90,6 +91,8 @@
     .leftSpaceToView(backView,20)
     .rightSpaceToView(backView,20)
     .heightIs(label2.height);
+    
+    
 
 }
 
