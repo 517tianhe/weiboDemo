@@ -17,6 +17,7 @@
 		83D7BEAE1C969A1D00E00955 /* TYDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D7BEAD1C969A1D00E00955 /* TYDemoTests.m */; };
 		83D7BEB91C969A1D00E00955 /* TYDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D7BEB81C969A1D00E00955 /* TYDemoUITests.m */; };
 		83D7BEEE1C96A5E600E00955 /* UIView+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D7BEED1C96A5E600E00955 /* UIView+ShortCut.m */; };
+		83D7BEF91C97FFFE00E00955 /* weiboManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D7BEF81C97FFFE00E00955 /* weiboManage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		83D7BEBA1C969A1D00E00955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83D7BEEC1C96A5E600E00955 /* UIView+ShortCut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ShortCut.h"; sourceTree = "<group>"; };
 		83D7BEED1C96A5E600E00955 /* UIView+ShortCut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ShortCut.m"; sourceTree = "<group>"; };
+		83D7BEF71C97FFFD00E00955 /* weiboManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weiboManage.h; sourceTree = "<group>"; };
+		83D7BEF81C97FFFE00E00955 /* weiboManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weiboManage.m; sourceTree = "<group>"; };
 		AD2C4EBC9F8746EFD1DC3E3B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BF298E2907F9C359C7B60518 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,10 +114,11 @@
 		83D7BE921C969A1C00E00955 /* TYDemo */ = {
 			isa = PBXGroup;
 			children = (
-				83D7BEEC1C96A5E600E00955 /* UIView+ShortCut.h */,
-				83D7BEED1C96A5E600E00955 /* UIView+ShortCut.m */,
 				83D7BE961C969A1C00E00955 /* AppDelegate.h */,
 				83D7BE971C969A1C00E00955 /* AppDelegate.m */,
+				83D7BEEF1C97E08000E00955 /* weiboManage */,
+				83D7BEEC1C96A5E600E00955 /* UIView+ShortCut.h */,
+				83D7BEED1C96A5E600E00955 /* UIView+ShortCut.m */,
 				83D7BE991C969A1C00E00955 /* ViewController.h */,
 				83D7BE9A1C969A1C00E00955 /* ViewController.m */,
 				83D7BE9C1C969A1C00E00955 /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				83D7BEBA1C969A1D00E00955 /* Info.plist */,
 			);
 			path = TYDemoUITests;
+			sourceTree = "<group>";
+		};
+		83D7BEEF1C97E08000E00955 /* weiboManage */ = {
+			isa = PBXGroup;
+			children = (
+				83D7BEF71C97FFFD00E00955 /* weiboManage.h */,
+				83D7BEF81C97FFFE00E00955 /* weiboManage.m */,
+			);
+			path = weiboManage;
 			sourceTree = "<group>";
 		};
 		BDDB80BA73931418DBA1FD9A /* Pods */ = {
@@ -354,6 +367,7 @@
 				83D7BE9B1C969A1C00E00955 /* ViewController.m in Sources */,
 				83D7BE981C969A1C00E00955 /* AppDelegate.m in Sources */,
 				83D7BE951C969A1C00E00955 /* main.m in Sources */,
+				83D7BEF91C97FFFE00E00955 /* weiboManage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
