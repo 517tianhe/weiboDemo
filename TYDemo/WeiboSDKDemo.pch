@@ -21,7 +21,7 @@
 #import <Foundation/Foundation.h>
 #endif
 
-#define kAppKey         @"2045436852"
+#define kAppKey         @"1007382459"
 #define kRedirectURI    @"http://www.sina.com"
 
 #endif /* WeiboSDKDemo_pch */

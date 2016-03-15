@@ -50,6 +50,21 @@
 - (void) weiboSDKInit {
     [WeiboSDK enableDebugMode:YES];
     [WeiboSDK registerApp:kAppKey];
+    
+//    WBSession *session=[[WBSession alloc]init];
+//    if ([session hasUser])
+//    {
+//
+//    }
+//    else
+//    {
+//        WBLoginViewController *loginViewController=[[WBLoginViewController alloc]init];
+//        __typeof (self) __weak weakSelf = self;
+//        [loginViewController setDismissViewBlock:^{
+//            [weakSelf.tableView.header beginRefreshing];
+//        }];
+//        [self presentViewController:loginViewController animated:YES completion:nil];
+//    }
 }
 
 @end
