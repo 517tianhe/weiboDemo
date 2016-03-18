@@ -19,9 +19,14 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#endif
 
+#import <WeiboSDK.h>
+#endif
+//微博SDK 应用Key
 #define kAppKey         @"1007382459"
+//
 #define kRedirectURI    @"http://www.sina.com"
+//微博登录返回通知
+#define KLoginNotification @"KLoginNotification"
 
 #endif /* WeiboSDKDemo_pch */

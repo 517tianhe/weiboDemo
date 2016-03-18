@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "wbSession.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self weiboSDKInit];
+    [self windowRootViewControllerSetup];
     return YES;
 }
 
@@ -49,7 +51,12 @@
  */
 - (void) weiboSDKInit {
     [WeiboSDK enableDebugMode:YES];
-    [WeiboSDK registerApp:kAppKey];
+    BOOL flag = [WeiboSDK registerApp:kAppKey];
+    if (flag) {
+        NSLog(@"weiboSDK 注册成功");
+    }else {
+        NSLog(@"weiboSDK 失败");
+    }
     
 //    WBSession *session=[[WBSession alloc]init];
 //    if ([session hasUser])
@@ -65,6 +72,43 @@
 //        }];
 //        [self presentViewController:loginViewController animated:YES completion:nil];
 //    }
+}
+#pragma Weibo Delegate
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return [WeiboSDK handleOpenURL:url delegate:self];
+}
+
+
+- (void)didReceiveWeiboRequest:(WBBaseRequest *)request
+{
+    if ([request isKindOfClass:WBProvideMessageForWeiboRequest.class])
+    {
+        //do thing
+    }
+}
+- (void)didReceiveWeiboResponse:(WBBaseResponse *)response
+{
+    if ([response isKindOfClass:WBAuthorizeResponse.class])
+    {
+        wbSession *session=[[wbSession alloc]init];
+        [session setCurrentSession:(WBAuthorizeResponse *)response];
+        [[NSNotificationCenter defaultCenter]postNotificationName:KLoginNotification object:self];
+    }
+}
+
+#pragma mark - 其他方法处理
+/**
+ *  设置rootViewController
+ */
+- (void)windowRootViewControllerSetup {
+    wbSession *session=[[wbSession alloc]init];
+    if ([session hasUserLogin]) {
+        
+    }
+    else {
+        
+    }
 }
 
 @end
