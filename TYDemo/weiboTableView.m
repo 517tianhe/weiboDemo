@@ -7,6 +7,12 @@
 //
 
 #import "weiboTableView.h"
+#import "weiboTableViewCell.h"
+#import <UITableView+SDAutoTableViewCellHeight.h>
+static NSString *kidentifier=@"WBTableViewCell";
+@interface weiboTableView ()<UITableViewDelegate,UITableViewDataSource>
+
+@end
 
 @implementation weiboTableView
 
@@ -17,5 +23,36 @@
     // Drawing code
 }
 */
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.delegate = self;
+        self.dataSource = self;
+        [self registerClass:[weiboTableViewCell class] forCellReuseIdentifier:kidentifier];
+    }
+    return self;
+}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return _weiboArray.count;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    WBHomeCellViewModel *homeCellViewModel = _weiboArray[indexPath.section];
+    return [tableView cellHeightForIndexPath:indexPath model:homeCellViewModel keyPath:@"homeCellViewModel" cellClass:[weiboTableViewCell class] contentViewWidth:SCREEN_WIDTH];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    WBHomeCellViewModel *homeCellViewModel = _weiboArray[indexPath.section];
+    weiboTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:kidentifier];
+    cell.homeCellViewModel=homeCellViewModel;
+    return cell;
+}
+
+
 
 @end

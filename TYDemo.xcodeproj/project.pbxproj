@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		4E60796A2FDF568C15E0CF65 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 698CAD8D24DD575D87656063 /* libPods.a */; };
 		83529F8C1CA26E4B0052BD16 /* weiboTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83529F8B1CA26E4B0052BD16 /* weiboTableView.m */; };
+		83529F8F1CA278CF0052BD16 /* WBDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83529F8E1CA278CF0052BD16 /* WBDataModel.m */; };
+		83529F931CA27B1A0052BD16 /* WBStatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83529F921CA27B1A0052BD16 /* WBStatusModel.m */; };
+		83529F961CA27D350052BD16 /* WBUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83529F951CA27D350052BD16 /* WBUserModel.m */; };
+		83529F9A1CA2816A0052BD16 /* WBHomeCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83529F991CA2816A0052BD16 /* WBHomeCellViewModel.m */; };
+		83529F9D1CA288E30052BD16 /* weiboTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83529F9C1CA288E30052BD16 /* weiboTableViewCell.m */; };
 		83BE5FA91C99513C00A108D2 /* wbSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BE5FA81C99513C00A108D2 /* wbSession.m */; };
 		83BE5FAD1C9955B900A108D2 /* NSDate+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BE5FAC1C9955B900A108D2 /* NSDate+TH.m */; };
 		83BE5FB31C99581D00A108D2 /* userLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BE5FB21C99581D00A108D2 /* userLoginViewController.m */; };
@@ -45,6 +50,17 @@
 		698CAD8D24DD575D87656063 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		83529F8A1CA26E4B0052BD16 /* weiboTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weiboTableView.h; sourceTree = "<group>"; };
 		83529F8B1CA26E4B0052BD16 /* weiboTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weiboTableView.m; sourceTree = "<group>"; };
+		83529F8D1CA278CF0052BD16 /* WBDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDataModel.h; sourceTree = "<group>"; };
+		83529F8E1CA278CF0052BD16 /* WBDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDataModel.m; sourceTree = "<group>"; };
+		83529F901CA279280052BD16 /* WBDealing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBDealing.h; sourceTree = "<group>"; };
+		83529F911CA27B1A0052BD16 /* WBStatusModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBStatusModel.h; sourceTree = "<group>"; };
+		83529F921CA27B1A0052BD16 /* WBStatusModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBStatusModel.m; sourceTree = "<group>"; };
+		83529F941CA27D350052BD16 /* WBUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBUserModel.h; sourceTree = "<group>"; };
+		83529F951CA27D350052BD16 /* WBUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBUserModel.m; sourceTree = "<group>"; };
+		83529F981CA2816A0052BD16 /* WBHomeCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHomeCellViewModel.h; sourceTree = "<group>"; };
+		83529F991CA2816A0052BD16 /* WBHomeCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBHomeCellViewModel.m; sourceTree = "<group>"; };
+		83529F9B1CA288E30052BD16 /* weiboTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weiboTableViewCell.h; sourceTree = "<group>"; };
+		83529F9C1CA288E30052BD16 /* weiboTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weiboTableViewCell.m; sourceTree = "<group>"; };
 		83BE5FA71C99513C00A108D2 /* wbSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbSession.h; sourceTree = "<group>"; };
 		83BE5FA81C99513C00A108D2 /* wbSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wbSession.m; sourceTree = "<group>"; };
 		83BE5FAB1C9955B900A108D2 /* NSDate+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TH.h"; sourceTree = "<group>"; };
@@ -102,6 +118,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83529F971CA280780052BD16 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				83529F981CA2816A0052BD16 /* WBHomeCellViewModel.h */,
+				83529F991CA2816A0052BD16 /* WBHomeCellViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
 		83BE5FAA1C99556900A108D2 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +155,8 @@
 				83D7BE9C1C969A1C00E00955 /* Main.storyboard */,
 				83529F8A1CA26E4B0052BD16 /* weiboTableView.h */,
 				83529F8B1CA26E4B0052BD16 /* weiboTableView.m */,
+				83529F9B1CA288E30052BD16 /* weiboTableViewCell.h */,
+				83529F9C1CA288E30052BD16 /* weiboTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -137,6 +164,13 @@
 		83BE5FB01C99578E00A108D2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				83529F901CA279280052BD16 /* WBDealing.h */,
+				83529F8D1CA278CF0052BD16 /* WBDataModel.h */,
+				83529F8E1CA278CF0052BD16 /* WBDataModel.m */,
+				83529F911CA27B1A0052BD16 /* WBStatusModel.h */,
+				83529F921CA27B1A0052BD16 /* WBStatusModel.m */,
+				83529F941CA27D350052BD16 /* WBUserModel.h */,
+				83529F951CA27D350052BD16 /* WBUserModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -172,6 +206,7 @@
 				83BE5FAA1C99556900A108D2 /* Category */,
 				83BE5FB01C99578E00A108D2 /* Model */,
 				83BE5FAF1C99577300A108D2 /* View */,
+				83529F971CA280780052BD16 /* ViewModel */,
 				83BE5FAE1C99574200A108D2 /* Controller */,
 				83D7BE931C969A1C00E00955 /* Supporting Files */,
 			);
@@ -418,13 +453,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				83529F8C1CA26E4B0052BD16 /* weiboTableView.m in Sources */,
+				83529F931CA27B1A0052BD16 /* WBStatusModel.m in Sources */,
+				83529F9D1CA288E30052BD16 /* weiboTableViewCell.m in Sources */,
 				83D7BEEE1C96A5E600E00955 /* UIView+ShortCut.m in Sources */,
 				83D7BE9B1C969A1C00E00955 /* ViewController.m in Sources */,
 				83BE5FAD1C9955B900A108D2 /* NSDate+TH.m in Sources */,
+				83529F961CA27D350052BD16 /* WBUserModel.m in Sources */,
+				83529F8F1CA278CF0052BD16 /* WBDataModel.m in Sources */,
 				83BE5FB31C99581D00A108D2 /* userLoginViewController.m in Sources */,
 				83D7BE981C969A1C00E00955 /* AppDelegate.m in Sources */,
 				83BE5FA91C99513C00A108D2 /* wbSession.m in Sources */,
 				83D7BE951C969A1C00E00955 /* main.m in Sources */,
+				83529F9A1CA2816A0052BD16 /* WBHomeCellViewModel.m in Sources */,
 				83D7BEF91C97FFFE00E00955 /* weiboManage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
