@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "wbSession.h"
+#import "userLoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -107,7 +108,11 @@
         
     }
     else {
-        
+        userLoginViewController *loginControlier = [[userLoginViewController alloc]init];
+        UINavigationController *navicationController = [[UINavigationController alloc]initWithRootViewController:loginControlier];
+        self.window.rootViewController = navicationController;
+        self.window.backgroundColor = [UIColor whiteColor];
+        [self.window makeKeyAndVisible];
     }
 }
 

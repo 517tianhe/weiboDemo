@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E60796A2FDF568C15E0CF65 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 698CAD8D24DD575D87656063 /* libPods.a */; };
+		83529F8C1CA26E4B0052BD16 /* weiboTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83529F8B1CA26E4B0052BD16 /* weiboTableView.m */; };
 		83BE5FA91C99513C00A108D2 /* wbSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BE5FA81C99513C00A108D2 /* wbSession.m */; };
 		83BE5FAD1C9955B900A108D2 /* NSDate+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BE5FAC1C9955B900A108D2 /* NSDate+TH.m */; };
 		83BE5FB31C99581D00A108D2 /* userLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BE5FB21C99581D00A108D2 /* userLoginViewController.m */; };
@@ -42,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		698CAD8D24DD575D87656063 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		83529F8A1CA26E4B0052BD16 /* weiboTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weiboTableView.h; sourceTree = "<group>"; };
+		83529F8B1CA26E4B0052BD16 /* weiboTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weiboTableView.m; sourceTree = "<group>"; };
 		83BE5FA71C99513C00A108D2 /* wbSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wbSession.h; sourceTree = "<group>"; };
 		83BE5FA81C99513C00A108D2 /* wbSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wbSession.m; sourceTree = "<group>"; };
 		83BE5FAB1C9955B900A108D2 /* NSDate+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TH.h"; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				83D7BE9C1C969A1C00E00955 /* Main.storyboard */,
+				83529F8A1CA26E4B0052BD16 /* weiboTableView.h */,
+				83529F8B1CA26E4B0052BD16 /* weiboTableView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -412,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83529F8C1CA26E4B0052BD16 /* weiboTableView.m in Sources */,
 				83D7BEEE1C96A5E600E00955 /* UIView+ShortCut.m in Sources */,
 				83D7BE9B1C969A1C00E00955 /* ViewController.m in Sources */,
 				83BE5FAD1C9955B900A108D2 /* NSDate+TH.m in Sources */,
@@ -562,8 +568,9 @@
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = TYDemo/WeiboSDKDemo.pch;
 				INFOPLIST_FILE = TYDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zowee.TYDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sina.weibo.SNWeiboSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -576,8 +583,9 @@
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = TYDemo/WeiboSDKDemo.pch;
 				INFOPLIST_FILE = TYDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zowee.TYDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sina.weibo.SNWeiboSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

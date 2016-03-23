@@ -23,7 +23,7 @@
 #import <WeiboSDK.h>
 #endif
 //微博SDK 应用Key
-#define kAppKey         @"1007382459"
+#define kAppKey         @"2045436852"
 //
 #define kRedirectURI    @"http://www.sina.com"
 //微博登录返回通知

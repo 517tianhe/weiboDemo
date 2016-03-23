@@ -10,4 +10,14 @@
 
 @interface weiboManage : NSObject
 
++ (weiboManage *)shardWeiBOManage;
+
+/**
+ *  获取微博列表
+ *
+ *  @param page          页码
+ *  @param requestResult 回调
+ */
+- (void)requestWeiBo:(NSInteger )page requestResult:(void(^)(BOOL result ,NSMutableArray *array))requestResult;
+
 @end
