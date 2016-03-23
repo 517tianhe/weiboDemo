@@ -7,6 +7,7 @@
 //
 
 #import "weiboTableViewCell.h"
+#import <UIView+SDAutoLayout.h>
 
 @implementation weiboTableViewCell
 
@@ -18,6 +19,22 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
+- (void)setup {
+    
+}
+
+- (void)setHomeCellViewModel:(WBHomeCellViewModel *)homeCellViewModel {
+    
 }
 
 @end
