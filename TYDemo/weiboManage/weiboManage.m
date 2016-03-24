@@ -55,6 +55,9 @@
         NSMutableArray *statusArray = [NSMutableArray array];
         for (NSDictionary *dic in model.statuses) {
             WBStatusModel *statusModel = [WBStatusModel mj_objectWithKeyValues:dic];
+            if (statusModel.user) {
+                statusModel.user = [WBUserModel mj_objectWithKeyValues:statusModel.user];
+            }
             if (statusModel.retweeted_status != nil) {
                 statusModel.retweeted_status = [WBStatusModel mj_objectWithKeyValues:statusModel.retweeted_status];
                 WBStatusModel *retweetedModel=statusModel.retweeted_status;

@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
+  - HexColors (4.0.0)
   - MJExtension (3.0.10)
   - MJRefresh (3.1.0)
   - SDAutoLayout (1.31)
@@ -26,6 +27,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - HexColors
   - MJExtension
   - MJRefresh
   - SDAutoLayout
@@ -36,6 +38,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  HexColors: 5f95843ef89aff6a72e1fd3a8ebabf205cc43379
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   SDAutoLayout: 79b8977f863ba4722bb8f8f6f92981d0b8ae932a

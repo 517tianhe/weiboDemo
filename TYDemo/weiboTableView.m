@@ -29,6 +29,8 @@ static NSString *kidentifier=@"WBTableViewCell";
     if (self) {
         self.delegate = self;
         self.dataSource = self;
+        self.separatorStyle = UITableViewCellSeparatorStyleNone;
+        self.backgroundColor= [UIColor blueColor];
         [self registerClass:[weiboTableViewCell class] forCellReuseIdentifier:kidentifier];
     }
     return self;
@@ -42,11 +44,13 @@ static NSString *kidentifier=@"WBTableViewCell";
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    WBHomeCellViewModel *homeCellViewModel = _weiboArray[indexPath.section];
-    return [tableView cellHeightForIndexPath:indexPath model:homeCellViewModel keyPath:@"homeCellViewModel" cellClass:[weiboTableViewCell class] contentViewWidth:SCREEN_WIDTH];
+//    WBHomeCellViewModel *homeCellViewModel = _weiboArray[indexPath.section];
+//    return [tableView cellHeightForIndexPath:indexPath model:homeCellViewModel keyPath:@"homeCellViewModel" cellClass:[weiboTableViewCell class] contentViewWidth:SCREEN_WIDTH];
+    return 250;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"%li",(long)indexPath.section);
     WBHomeCellViewModel *homeCellViewModel = _weiboArray[indexPath.section];
     weiboTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:kidentifier];
     cell.homeCellViewModel=homeCellViewModel;

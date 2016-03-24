@@ -50,7 +50,7 @@
 }
 
 - (void)loginNotification {
-    UIViewController *hoemViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"homeViewController"];
+    UIViewController *hoemViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"homeController"];
     [self.navigationController pushViewController:hoemViewController animated:YES];
     //[self dismissViewControllerAnimated:YES completion:self.dismissViewBlock];
 }

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>HexColors.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJExtension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,17 +57,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1B3022C871BA897DD7ACB60A1C63E7C2</key>
+		<key>02D485219196526E02174E6F86CFA184</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1F6D1B7B3C7664C5E41DE54A17F1A491</key>
+		<key>10D476EEED2460BCA2B5AA07975AAF0A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8282D87CF5E9FE154685F417D4642EB9</key>
+		<key>41F8D8F9D459CED14E68A32759785C11</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>783EF4875DC4F2172AC5083DBDE5531F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,17 +92,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D4F0B192D3C298E7A0A090A95355B4F8</key>
+		<key>D67FA92A543A00AD0C603D54BC4A4034</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E42D77AAD61F07BEE8169DE76AD68198</key>
+		<key>E9EF397B95762DDB254C71DDCB4B1381</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E9834CA8E91DC9DBBAD9C988DF86BAEF</key>
+		<key>F5706DA2182152769CE46CCF3CF19259</key>
 		<dict>
 			<key>primary</key>
 			<true/>

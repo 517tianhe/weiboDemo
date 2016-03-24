@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WBHomeCellViewModel.h"
 
 @interface WBHeadView : UIView
+
+@property (nonatomic) WBHomeCellViewModel *homeCellViewModel;
 
 @end

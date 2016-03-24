@@ -11,27 +11,27 @@
 @implementation NSDate (TH)
 - (NSInteger)year
 {
-    return [[[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:self] year];
+    return [[[NSCalendar currentCalendar] components:NSCalendarUnitYear fromDate:self] year];
 }
 - (NSInteger)month
 {
-    return [[[NSCalendar currentCalendar] components:NSMonthCalendarUnit fromDate:self] month];
+    return [[[NSCalendar currentCalendar] components:NSCalendarUnitMonth fromDate:self] month];
 }
 - (NSInteger)day
 {
-    return [[[NSCalendar currentCalendar] components:NSDayCalendarUnit fromDate:self] day];
+    return [[[NSCalendar currentCalendar] components:NSCalendarUnitDay fromDate:self] day];
 }
 - (NSInteger)hour
 {
-    return [[[NSCalendar currentCalendar] components:NSHourCalendarUnit fromDate:self] hour];
+    return [[[NSCalendar currentCalendar] components:NSCalendarUnitHour fromDate:self] hour];
 }
 - (NSInteger)minute
 {
-    return [[[NSCalendar currentCalendar] components:NSMinuteCalendarUnit fromDate:self] minute];
+    return [[[NSCalendar currentCalendar] components:NSCalendarUnitMinute fromDate:self] minute];
 }
 - (NSInteger)second
 {
-    return [[[NSCalendar currentCalendar] components:NSSecondCalendarUnit fromDate:self] second];
+    return [[[NSCalendar currentCalendar] components:NSCalendarUnitSecond fromDate:self] second];
 }
 - (NSInteger)week
 {
@@ -39,24 +39,24 @@
 }
 - (NSInteger)weekday
 {
-    return [[[NSCalendar currentCalendar] components:NSWeekdayCalendarUnit fromDate:self] weekday];
+    return [[[NSCalendar currentCalendar] components:NSCalendarUnitWeekday fromDate:self] weekday];
 }
 - (NSInteger)weekdayOrdinal
 {
-    return [[[NSCalendar currentCalendar] components:NSWeekdayOrdinalCalendarUnit fromDate:self] weekdayOrdinal];
+    return [[[NSCalendar currentCalendar] components:NSCalendarUnitWeekdayOrdinal fromDate:self] weekdayOrdinal];
 }
 - (NSInteger)weekOfMonth {
-    return [[[NSCalendar currentCalendar] components:NSWeekOfMonthCalendarUnit fromDate:self] weekOfMonth];
+    return [[[NSCalendar currentCalendar] components:NSCalendarUnitWeekOfMonth fromDate:self] weekOfMonth];
 }
 - (NSInteger)weekOfYear {
-    return [[[NSCalendar currentCalendar] components:NSWeekOfYearCalendarUnit fromDate:self] weekOfYear];
+    return [[[NSCalendar currentCalendar] components:NSCalendarUnitWeekOfYear fromDate:self] weekOfYear];
 }
 - (NSInteger)yearForWeekOfYear {
-    return [[[NSCalendar currentCalendar] components:NSYearForWeekOfYearCalendarUnit fromDate:self] yearForWeekOfYear];
+    return [[[NSCalendar currentCalendar] components:NSCalendarUnitYearForWeekOfYear fromDate:self] yearForWeekOfYear];
 }
 - (NSInteger)quarter
 {
-    return [[[NSCalendar currentCalendar] components:NSQuarterCalendarUnit fromDate:self] quarter];
+    return [[[NSCalendar currentCalendar] components:NSCalendarUnitQuarter fromDate:self] quarter];
 }
 
 - (NSString *)ShortCutStringWithDateFormatter:(NSDateFormatter *)dateFormatter
