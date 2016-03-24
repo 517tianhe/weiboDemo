@@ -8,8 +8,40 @@
 
 #import "weiboTableViewCell.h"
 #import <UIView+SDAutoLayout.h>
+#import <TYAttributedLabel.h>
+#import "WBHeadView.h"
+#import "WBBottomView.h"
+#import "HZPhotoGroup.h"
 
-@implementation weiboTableViewCell
+@interface weiboTableViewCell ()<TYAttributedLabelDelegate>
+
+@end
+
+
+@implementation weiboTableViewCell{
+    /**
+     *  微博头视图
+     */
+    WBHeadView *_headView;
+    /**
+     *  微博消息内容
+     */
+    TYAttributedLabel *_contentTYAttributedLab;
+    /**
+     *  转发视图
+     */
+    UIView *_retweetedView;
+    /**
+     *  微博转发的内容
+     */
+    TYAttributedLabel *_retweetedTYAttributedLab;
+    /**
+     *  图片显示视图
+     */
+    HZPhotoGroup *_contentImageViewGroup;
+    
+    
+}
 
 - (void)awakeFromNib {
     // Initialization code
