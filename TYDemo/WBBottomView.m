@@ -34,19 +34,15 @@
 
 
 - (void)setup {
+    //self.backgroundColor = [UIColor blackColor];
     UIView *topline = [UIView new];
     [self addSubview:topline];
-    topline.backgroundColor = [UIColor hx_colorWithHexRGBAString:@"d8d8d8"];
+    topline.backgroundColor = [UIColor hx_colorWithHexRGBAString:@"d8d8d8" alpha:0.5];
     topline.sd_layout
     .topEqualToView(self)
     .leftEqualToView(self)
     .rightEqualToView(self)
     .heightIs(1);
-    
-    UIImageView *backImage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"common_card_bottom_background"]];
-    [self addSubview:backImage];
-    backImage.sd_layout
-    .spaceToSuperView(UIEdgeInsetsZero);
     
     /**
      *  转发
@@ -56,23 +52,23 @@
     [_btnForwarding setImage:[UIImage imageNamed:@"timeline_icon_retweet"] forState:UIControlStateNormal];
     [_btnForwarding setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     _btnForwarding.titleLabel.font = [UIFont systemFontOfSize:13];
-    _btnForwarding.imageEdgeInsets=UIEdgeInsetsMake(0,0,0,10);
-    _btnForwarding.titleEdgeInsets=UIEdgeInsetsMake(0,10,0,0);
+    _btnForwarding.imageEdgeInsets=UIEdgeInsetsMake(0,0,0,5);
+    _btnForwarding.titleEdgeInsets=UIEdgeInsetsMake(0,5,0,0);
     [self addSubview:_btnForwarding];
     _btnForwarding.sd_layout
     .topEqualToView(self)
     .bottomEqualToView(self)
     .leftEqualToView(self)
-    .heightRatioToView(_btnComments,1);
+    .widthRatioToView(self,0.33333);
+    
     
     UIImageView *oneline = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"timeline_card_bottom_line_os7"]];
     oneline.backgroundColor = [UIColor clearColor];
     [self addSubview:oneline];
     oneline.sd_layout
-    .topEqualToView(self)
-    .bottomEqualToView(self)
-    .leftEqualToView(_btnForwarding)
-    .rightEqualToView(_btnComments)
+    .topSpaceToView(self,5)
+    .bottomSpaceToView(self,5)
+    .leftSpaceToView(_btnForwarding,0)
     .widthIs(1);
     
     /**
@@ -83,22 +79,23 @@
     [_btnComments setImage:[UIImage imageNamed:@"timeline_icon_comment"] forState:UIControlStateNormal];
     [_btnComments setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     _btnComments.titleLabel.font = [UIFont systemFontOfSize:13];
-    _btnComments.imageEdgeInsets=UIEdgeInsetsMake(0,0,0,10);
-    _btnComments.titleEdgeInsets=UIEdgeInsetsMake(0,10,0,0);
+    _btnComments.imageEdgeInsets=UIEdgeInsetsMake(0,0,0,5);
+    _btnComments.titleEdgeInsets=UIEdgeInsetsMake(0,5,0,0);
     [self addSubview:_btnComments];
     _btnComments.sd_layout
     .topEqualToView(self)
     .bottomEqualToView(self)
-    .heightRatioToView(_btnPraise,1);
+    .leftSpaceToView(_btnForwarding,0)
+    .widthRatioToView(self,0.33333);
+
     
     UIImageView *twoline = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"timeline_card_bottom_line_os7"]];
     twoline.backgroundColor = [UIColor clearColor];
     [self addSubview:twoline];
     twoline.sd_layout
-    .topEqualToView(self)
-    .bottomEqualToView(self)
-    .leftEqualToView(_btnComments)
-    .rightEqualToView(_btnPraise)
+    .topSpaceToView(self,5)
+    .bottomSpaceToView(self,5)
+    .leftSpaceToView(_btnComments,0)
     .widthIs(1);
     
     
@@ -107,14 +104,15 @@
     [_btnPraise setImage:[UIImage imageNamed:@"timeline_icon_unlike"] forState:UIControlStateNormal];
     [_btnPraise setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     _btnPraise.titleLabel.font = [UIFont systemFontOfSize:13];
-    _btnPraise.imageEdgeInsets=UIEdgeInsetsMake(0,0,0,10);
-    _btnPraise.titleEdgeInsets=UIEdgeInsetsMake(0,10,0,0);
+    _btnPraise.imageEdgeInsets=UIEdgeInsetsMake(0,0,0,5);
+    _btnPraise.titleEdgeInsets=UIEdgeInsetsMake(0,5,0,0);
     [self addSubview:_btnPraise];
     _btnPraise.sd_layout
     .topEqualToView(self)
     .bottomEqualToView(self)
     .rightEqualToView(self)
-    .heightRatioToView(_btnForwarding,1);
+    .leftSpaceToView(_btnComments,0)
+    .widthRatioToView(self,0.33333);
 }
 
 - (void)setHomeCellViewModel:(WBHomeCellViewModel *)homeCellViewModel {

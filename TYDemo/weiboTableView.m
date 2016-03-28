@@ -9,6 +9,7 @@
 #import "weiboTableView.h"
 #import "weiboTableViewCell.h"
 #import <UITableView+SDAutoTableViewCellHeight.h>
+#import <HexColors.h>
 static NSString *kidentifier=@"WBTableViewCell";
 @interface weiboTableView ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -30,7 +31,7 @@ static NSString *kidentifier=@"WBTableViewCell";
         self.delegate = self;
         self.dataSource = self;
         self.separatorStyle = UITableViewCellSeparatorStyleNone;
-        self.backgroundColor= [UIColor blueColor];
+        self.backgroundColor = [UIColor hx_colorWithHexRGBAString:@"f5f2f3"];
         [self registerClass:[weiboTableViewCell class] forCellReuseIdentifier:kidentifier];
     }
     return self;
@@ -44,17 +45,26 @@ static NSString *kidentifier=@"WBTableViewCell";
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    WBHomeCellViewModel *homeCellViewModel = _weiboArray[indexPath.section];
-//    return [tableView cellHeightForIndexPath:indexPath model:homeCellViewModel keyPath:@"homeCellViewModel" cellClass:[weiboTableViewCell class] contentViewWidth:SCREEN_WIDTH];
-    return 250;
+    WBHomeCellViewModel *homeCellViewModel = _weiboArray[indexPath.section];
+    return [tableView cellHeightForIndexPath:indexPath model:homeCellViewModel keyPath:@"homeCellViewModel" cellClass:[weiboTableViewCell class] contentViewWidth:SCREEN_WIDTH];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"%li",(long)indexPath.section);
     WBHomeCellViewModel *homeCellViewModel = _weiboArray[indexPath.section];
     weiboTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:kidentifier];
-    cell.homeCellViewModel=homeCellViewModel;
+    cell.homeCellViewModel = homeCellViewModel;
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 10;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    UIView *view = [[UIView alloc ]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 10)];
+    view.backgroundColor = [UIColor clearColor];
+    return view;
 }
 
 

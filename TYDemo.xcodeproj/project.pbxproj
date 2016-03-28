@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E60796A2FDF568C15E0CF65 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 698CAD8D24DD575D87656063 /* libPods.a */; };
+		834448441CA930540090196C /* weiboContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 834448431CA930540090196C /* weiboContentView.m */; };
 		83529F8C1CA26E4B0052BD16 /* weiboTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83529F8B1CA26E4B0052BD16 /* weiboTableView.m */; };
 		83529F8F1CA278CF0052BD16 /* WBDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83529F8E1CA278CF0052BD16 /* WBDataModel.m */; };
 		83529F931CA27B1A0052BD16 /* WBStatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83529F921CA27B1A0052BD16 /* WBStatusModel.m */; };
@@ -60,6 +61,8 @@
 
 /* Begin PBXFileReference section */
 		698CAD8D24DD575D87656063 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		834448421CA930540090196C /* weiboContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weiboContentView.h; sourceTree = "<group>"; };
+		834448431CA930540090196C /* weiboContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weiboContentView.m; sourceTree = "<group>"; };
 		83529F8A1CA26E4B0052BD16 /* weiboTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weiboTableView.h; sourceTree = "<group>"; };
 		83529F8B1CA26E4B0052BD16 /* weiboTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weiboTableView.m; sourceTree = "<group>"; };
 		83529F8D1CA278CF0052BD16 /* WBDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDataModel.h; sourceTree = "<group>"; };
@@ -199,6 +202,8 @@
 				83D0F3E31CA37AFA004415BD /* WBHeadView.m */,
 				83D0F3E51CA37B0D004415BD /* WBBottomView.h */,
 				83D0F3E61CA37B0D004415BD /* WBBottomView.m */,
+				834448421CA930540090196C /* weiboContentView.h */,
+				834448431CA930540090196C /* weiboContentView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -526,6 +531,7 @@
 				83D0F4031CA3D758004415BD /* WBKeywordModel.m in Sources */,
 				83529F8C1CA26E4B0052BD16 /* weiboTableView.m in Sources */,
 				83529F931CA27B1A0052BD16 /* WBStatusModel.m in Sources */,
+				834448441CA930540090196C /* weiboContentView.m in Sources */,
 				83D0F3E71CA37B0D004415BD /* WBBottomView.m in Sources */,
 				83529F9D1CA288E30052BD16 /* weiboTableViewCell.m in Sources */,
 				83D7BEEE1C96A5E600E00955 /* UIView+ShortCut.m in Sources */,

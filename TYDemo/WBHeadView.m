@@ -75,8 +75,11 @@
     
     _releaseTimeLab = [[UILabel alloc]init];
     _releaseTerminal = [[UILabel alloc]init];
+    _releaseTimeLab.font = SUBTITLE_FONT_SIZE;
+    _releaseTerminal.font = SUBTITLE_FONT_SIZE;
     [self addSubview:_releaseTerminal];
     [self addSubview:_releaseTimeLab];
+    
     
     _contactAvatarView.backgroundColor = [UIColor clearColor];
     _contactAvatarView.sd_layout
@@ -97,19 +100,19 @@
     .rightEqualToView(_contactAvatarView)
     .heightIs(17)
     .widthIs(17);
-    _imgAvaterType.backgroundColor = [UIColor whiteColor];
-    _imgAvaterType.layer.masksToBounds = YES;
-    _imgAvaterType.layer.cornerRadius = CGRectGetWidth(_imgAvaterType.frame)*0.5;
-    _imgAvaterType.layer.borderColor = [[UIColor whiteColor] CGColor];
-    _imgAvaterType.layer.borderWidth = 0.5;
+//    _imgAvaterType.backgroundColor = [UIColor whiteColor];
+//    _imgAvaterType.layer.masksToBounds = YES;
+//    _imgAvaterType.layer.cornerRadius = CGRectGetWidth(_imgAvaterType.frame)*0.5;
+//    _imgAvaterType.layer.borderColor = [[UIColor whiteColor] CGColor];
+//    _imgAvaterType.layer.borderWidth = 0.5;
     
     
     _userLabel.sd_layout
     .topEqualToView(_contactAvatarView)
     .leftSpaceToView(_contactAvatarView,15)
-    .heightIs(17)
-    .rightSpaceToView(_imgVip,3);
+    .heightIs(17);
     _imgVip.sd_layout
+    .leftSpaceToView(_userLabel,5)
     .topEqualToView(_userLabel)
     .bottomEqualToView(_userLabel)
     .widthEqualToHeight();

@@ -36,7 +36,7 @@
 
 //布局字体
 #define TITLE_FONT_SIZE [UIFont systemFontOfSize:17.f]
-#define SUBTITLE_FONT_SIZE [UIFont systemFontOfSize:15.f]
+#define SUBTITLE_FONT_SIZE [UIFont systemFontOfSize:12.f]
 #define BUTTON_FONT_SIZE [UIFont systemFontOfSize:13.f]
 
 //自定义链接协议
