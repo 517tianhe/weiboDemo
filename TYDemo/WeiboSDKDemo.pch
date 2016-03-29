@@ -39,6 +39,11 @@
 #define SUBTITLE_FONT_SIZE [UIFont systemFontOfSize:12.f]
 #define BUTTON_FONT_SIZE [UIFont systemFontOfSize:13.f]
 
+// Cell布局相关
+#define CELL_PADDING_8 8    //距离上面
+#define CELL_PADDING_6 6    //距离左边
+#define CELL_SIDEMARGIN 15  //侧边缘
+
 //自定义链接协议
 #define PROTOCOL_AT_SOMEONE @"at://"
 #define PROTOCOL_SHARP_TREND @"sharptrend://"

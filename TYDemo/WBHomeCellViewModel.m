@@ -8,8 +8,10 @@
 
 #import "WBHomeCellViewModel.h"
 #import "NSString+Size.h"
+#import "UIImage+ShortCut.h"
 #import "NSDate+TH.h"
 #import "WBParser.h"
+#import "WBKeywordModel.h"
 
 @implementation WBHomeCellViewModel
 
@@ -27,6 +29,7 @@
     [self setCreated_at];
     [self setSource];
     [self parseAllKeywords];
+    [self calculateHegihtAndAttributedString];
 }
 #pragma 默认全部未VIP,官方VIP等级还未开放
 -(void)setMlevelImageUrl
@@ -150,6 +153,66 @@
         self.topicArray=[WBParser keywordRangesOfSharpTrendInString:self.statusModel.text];
     }
 }
-
+#pragma 内容计算高度
+-(void)calculateHegihtAndAttributedString
+{
+    TYTextContainer * textContainer=[[TYTextContainer alloc]init];
+    textContainer.characterSpacing = 0;
+    textContainer.linesSpacing = 4;
+    textContainer.lineBreakMode = kCTLineBreakByWordWrapping;
+    textContainer.font = TITLE_FONT_SIZE;
+    textContainer.text = self.statusModel.text;
+    //表情
+    for (WBKeywordModel *keyWordModel in self.emotionArray) {
+        TYImageStorage *imageStorage = [[TYImageStorage alloc]init];
+        //imageStorage.imageName = keywordModel.url;
+        //谨慎缓存image，会增长内存
+        imageStorage.image = [[UIImage imageNamed:keyWordModel.url] imageScaledToSize:CGSizeMake(19, 19)];
+        imageStorage.range = keyWordModel.range;
+        imageStorage.size = CGSizeMake(19, 19);
+        
+        [textContainer addTextStorage:imageStorage];
+    }
+    
+    //url链接
+    for (WBKeywordModel *keyWordModel in self.urlArray) {
+        TYLinkTextStorage *linkTextStorage = [[TYLinkTextStorage alloc]init];
+        linkTextStorage.range = keyWordModel.range;
+        linkTextStorage.text = nil;
+        linkTextStorage.linkData = keyWordModel.url;
+        linkTextStorage.underLineStyle = kCTUnderlineStyleNone;
+        
+        [textContainer addTextStorage:linkTextStorage];
+    }
+    //at
+    for (WBKeywordModel *keyWordModel in self.atPersonArray) {
+        
+        TYLinkTextStorage *linkTextStorage=[[TYLinkTextStorage alloc]init];
+        linkTextStorage.range=keyWordModel.range;
+        linkTextStorage.text=nil;
+        linkTextStorage.linkData=keyWordModel.url;
+        linkTextStorage.underLineStyle=kCTUnderlineStyleNone;
+        
+        [textContainer addTextStorage:linkTextStorage];
+    }
+    //话题
+    for (WBKeywordModel *keyWordModel in self.topicArray) {
+        TYLinkTextStorage *linkTextStorage=[[TYLinkTextStorage alloc]init];
+        linkTextStorage.range=keyWordModel.range;
+        linkTextStorage.text=nil;
+        linkTextStorage.linkData=keyWordModel.url;
+        linkTextStorage.underLineStyle=kCTUnderlineStyleNone;
+        
+        [textContainer addTextStorage:linkTextStorage];
+    }
+    
+    _textContainer = [textContainer createTextContainerWithTextWidth:SCREEN_WIDTH - CELL_SIDEMARGIN*2];
+    _contentHeight = textContainer.textHeight;
+    
+    self.atPersonArray=nil;
+    self.emotionArray=nil;
+    self.urlArray=nil;
+    self.topicArray=nil;
+}
 
 @end

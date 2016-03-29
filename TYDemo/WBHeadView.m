@@ -84,7 +84,7 @@
     _contactAvatarView.backgroundColor = [UIColor clearColor];
     _contactAvatarView.sd_layout
     .centerYEqualToView(self)
-    .leftSpaceToView(self,15)
+    .leftSpaceToView(self,CELL_SIDEMARGIN)
     .widthIs(40)
     .heightIs(40);
     

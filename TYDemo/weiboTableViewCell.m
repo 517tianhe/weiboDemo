@@ -63,6 +63,11 @@
 - (void)setup {
     UIView *contentView = self.contentView;
     
+    for (UIView *view in contentView.subviews) {
+        [view removeFromSuperview];
+    }
+    
+    
     _headView = [[WBHeadView alloc]init];
     [contentView addSubview:_headView];
     _headView.sd_layout
@@ -87,17 +92,17 @@
     .heightIs(CELL_BOTTOM_HEIGHT);
     
 
-    [self setupAutoHeightWithBottomView:_WBContentView bottomMargin:CELL_BOTTOM_HEIGHT];
+    
     
 }
 
 - (void)setHomeCellViewModel:(WBHomeCellViewModel *)homeCellViewModel {
     _homeCellViewModel = homeCellViewModel;
-    
+    [self setup];
     _headView.homeCellViewModel = homeCellViewModel;
     _bottomView.homeCellViewModel = homeCellViewModel;
     _WBContentView.homeCellViewModel = homeCellViewModel;
-
+    [self setupAutoHeightWithBottomView:_WBContentView bottomMargin:CELL_BOTTOM_HEIGHT];
 }
 
 @end

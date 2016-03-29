@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E60796A2FDF568C15E0CF65 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 698CAD8D24DD575D87656063 /* libPods.a */; };
 		834448441CA930540090196C /* weiboContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 834448431CA930540090196C /* weiboContentView.m */; };
+		834448FE1CAA66470090196C /* UIImage+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 834448FD1CAA66470090196C /* UIImage+ShortCut.m */; };
 		83529F8C1CA26E4B0052BD16 /* weiboTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83529F8B1CA26E4B0052BD16 /* weiboTableView.m */; };
 		83529F8F1CA278CF0052BD16 /* WBDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83529F8E1CA278CF0052BD16 /* WBDataModel.m */; };
 		83529F931CA27B1A0052BD16 /* WBStatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83529F921CA27B1A0052BD16 /* WBStatusModel.m */; };
@@ -63,6 +64,8 @@
 		698CAD8D24DD575D87656063 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		834448421CA930540090196C /* weiboContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weiboContentView.h; sourceTree = "<group>"; };
 		834448431CA930540090196C /* weiboContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weiboContentView.m; sourceTree = "<group>"; };
+		834448FC1CAA66470090196C /* UIImage+ShortCut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ShortCut.h"; sourceTree = "<group>"; };
+		834448FD1CAA66470090196C /* UIImage+ShortCut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ShortCut.m"; sourceTree = "<group>"; };
 		83529F8A1CA26E4B0052BD16 /* weiboTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weiboTableView.h; sourceTree = "<group>"; };
 		83529F8B1CA26E4B0052BD16 /* weiboTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weiboTableView.m; sourceTree = "<group>"; };
 		83529F8D1CA278CF0052BD16 /* WBDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDataModel.h; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				83BE5FAC1C9955B900A108D2 /* NSDate+TH.m */,
 				83D0F3FB1CA3C5BD004415BD /* NSString+Size.h */,
 				83D0F3FC1CA3C5BD004415BD /* NSString+Size.m */,
+				834448FC1CAA66470090196C /* UIImage+ShortCut.h */,
+				834448FD1CAA66470090196C /* UIImage+ShortCut.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -552,6 +557,7 @@
 				83529F9A1CA2816A0052BD16 /* WBHomeCellViewModel.m in Sources */,
 				83D0F4061CA3D7D5004415BD /* WBEmotionsModel.m in Sources */,
 				83D7BEF91C97FFFE00E00955 /* weiboManage.m in Sources */,
+				834448FE1CAA66470090196C /* UIImage+ShortCut.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
