@@ -46,14 +46,14 @@ static NSString *kidentifier=@"WBTableViewCell";
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     WBHomeCellViewModel *homeCellViewModel = _weiboArray[indexPath.section];
-    NSLog(@"section:%li",(long)indexPath.section);
-    return [tableView cellHeightForIndexPath:indexPath model:homeCellViewModel keyPath:@"homeCellViewModel" cellClass:[weiboTableViewCell class] contentViewWidth:SCREEN_WIDTH];
+//    NSLog(@"row:%li  height:%f",(long)indexPath.row,[self cellHeightForIndexPath:indexPath model:homeCellViewModel keyPath:@"homeCellViewModel" cellClass:[weiboTableViewCell class] contentViewWidth:SCREEN_WIDTH]);
+    return [self cellHeightForIndexPath:indexPath model:homeCellViewModel keyPath:@"homeCellViewModel" cellClass:[weiboTableViewCell class] contentViewWidth:SCREEN_WIDTH];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   
     WBHomeCellViewModel *homeCellViewModel = _weiboArray[indexPath.section];
-    weiboTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:kidentifier];
+    weiboTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:kidentifier ];
     cell.homeCellViewModel = homeCellViewModel;
     return cell;
 }

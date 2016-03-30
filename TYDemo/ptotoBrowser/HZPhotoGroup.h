@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong) NSArray *photoItemArray;
 
+@property (nonatomic, assign) CGFloat itemWidth;
+
 @end

@@ -436,6 +436,9 @@
     [UIView animateWithDuration:HZPhotoBrowserHideImageAnimationDuration animations:^{
         tempImageView.frame = targetTemp;
     } completion:^(BOOL finished) {
+        if ([self.delegate respondsToSelector:@selector(phototBrowserClosedImageForIndex:)]) {
+            [self.delegate phototBrowserClosedImageForIndex:currentIndex];
+        }
         [_contentView removeFromSuperview];
         [tempImageView removeFromSuperview];
     }];

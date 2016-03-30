@@ -86,12 +86,12 @@
     _bottomView = [[WBBottomView alloc]init];
     [contentView addSubview:_bottomView];
     _bottomView.sd_layout
-    .bottomEqualToView(contentView)
+    .topSpaceToView(_WBContentView,0)
     .leftEqualToView(contentView)
     .rightEqualToView(contentView)
     .heightIs(CELL_BOTTOM_HEIGHT);
     
-
+    [self setupAutoHeightWithBottomView:_bottomView bottomMargin:10];
     
     
 }
@@ -102,7 +102,7 @@
     _headView.homeCellViewModel = homeCellViewModel;
     _bottomView.homeCellViewModel = homeCellViewModel;
     _WBContentView.homeCellViewModel = homeCellViewModel;
-    [self setupAutoHeightWithBottomView:_WBContentView bottomMargin:CELL_BOTTOM_HEIGHT];
+    
 }
 
 @end

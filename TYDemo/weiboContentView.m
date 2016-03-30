@@ -44,9 +44,7 @@
 
 
 - (void)setup {
-    for (UIView *view in self.subviews) {
-        [view removeFromSuperview];
-    }
+
     //self.frame = CGRectMake(0, 0, SCREEN_WIDTH, 300);
     self.backgroundColor = [UIColor yellowColor];
     _contentTYAttributedLab = [[TYAttributedLabel alloc]init];
@@ -71,7 +69,7 @@
 
 
 - (void)setHomeCellViewModel:(WBHomeCellViewModel *)homeCellViewModel {
-    [self setup];
+//    [self setup];
     _homeCellViewModel = homeCellViewModel;
     
     _contentTYAttributedLab.textContainer = homeCellViewModel.textContainer;
@@ -81,7 +79,8 @@
     .leftSpaceToView(self,CELL_SIDEMARGIN)
     .rightSpaceToView(self,CELL_SIDEMARGIN)
     .heightIs(homeCellViewModel.contentHeight);
-    NSLog(@"contentHeight:%f",homeCellViewModel.contentHeight);
+    [self setupAutoHeightWithBottomView:_contentTYAttributedLab bottomMargin:5];
+    //NSLog(@"contentHeight:%f",homeCellViewModel.contentHeight);
     if (homeCellViewModel.statusModel.retweeted_status!=nil)
     {
         _retweetedView.sd_layout
@@ -98,29 +97,19 @@
         .heightIs(retweetedViewModel.contentHeight);
      
         if (retweetedViewModel.statusModel.pic_urls.count > 0) {
-//            [_retweetedView addSubview: _contentImageViewGroup];
-//            _contentImageViewGroup.sd_layout
-//            .topSpaceToView(_retweetedTYAttributedLab,10)
-//            .leftSpaceToView(_retweetedView,15);
-//            NSMutableArray *temp = [NSMutableArray array];
-//            [retweetedViewModel.statusModel.pic_urls enumerateObjectsUsingBlock:^(NSDictionary *dic, NSUInteger idx, BOOL *stop) {
-//                HZPhotoItem *item = [[HZPhotoItem alloc] init];
-//                item.thumbnail_pic = dic[@"thumbnail_pic"];
-//                [temp addObject:item];
-//            }];
-//            _contentImageViewGroup.photoItemArray = [temp copy];
-//            
-//            [_retweetedView setupAutoHeightWithBottomView:_contentImageViewGroup bottomMargin:0];
-            UIView *view = [UIView new];
-            view.backgroundColor = [UIColor blueColor];
-            [_retweetedView addSubview:view];
-            //_contentImageViewGroup.backgroundColor = [UIColor blueColor];
-            view.sd_layout
-            .topSpaceToView(_retweetedTYAttributedLab,0)
-            .leftSpaceToView(_retweetedView,15)
-            .rightSpaceToView(_retweetedView,15)
-            .heightIs(70);
-            [_retweetedView setupAutoHeightWithBottomView:view bottomMargin:10];
+            [_retweetedView addSubview: _contentImageViewGroup];
+            _contentImageViewGroup.sd_layout
+            .topSpaceToView(_retweetedTYAttributedLab,10)
+            .leftSpaceToView(_retweetedView,15);
+            NSMutableArray *temp = [NSMutableArray array];
+            [retweetedViewModel.statusModel.pic_urls enumerateObjectsUsingBlock:^(NSDictionary *dic, NSUInteger idx, BOOL *stop) {
+                HZPhotoItem *item = [[HZPhotoItem alloc] init];
+                item.thumbnail_pic = dic[@"thumbnail_pic"];
+                [temp addObject:item];
+            }];
+            _contentImageViewGroup.photoItemArray = [temp copy];
+            
+            [_retweetedView setupAutoHeightWithBottomView:_contentImageViewGroup bottomMargin:0];
         }else {
             [_retweetedView setupAutoHeightWithBottomView:_retweetedTYAttributedLab bottomMargin:5];
         }
@@ -128,25 +117,30 @@
     }else {
         [_retweetedView removeFromSuperview];
         if (homeCellViewModel.statusModel.pic_urls.count > 0) {
-            UIView *view = [UIView new];
-            view.backgroundColor = [UIColor blueColor];
-            [self addSubview:view];
-            //_contentImageViewGroup.backgroundColor = [UIColor blueColor];
-            view.sd_layout
-            .topSpaceToView(_contentTYAttributedLab,10)
-            .leftSpaceToView(self,15)
-            .rightSpaceToView(self,15)
-            .heightIs(10);
+//            [self addSubview:_contentImageViewGroup];
+//           // _contentImageViewGroup.backgroundColor = [UIColor blueColor];
+//            _contentImageViewGroup.sd_layout
+//            .topSpaceToView(_contentTYAttributedLab,5)
+//            .leftSpaceToView(self,15);
 //            NSMutableArray *temp = [NSMutableArray array];
 //            [homeCellViewModel.statusModel.pic_urls enumerateObjectsUsingBlock:^(NSDictionary *dic, NSUInteger idx, BOOL *stop) {
 //                HZPhotoItem *item = [[HZPhotoItem alloc] init];
 //                item.thumbnail_pic = dic[@"thumbnail_pic"];
 //                [temp addObject:item];
 //            }];
-           // _contentImageViewGroup.photoItemArray = @[];
-            [self setupAutoHeightWithBottomView:view bottomMargin:0];
+//            _contentImageViewGroup.photoItemArray = temp;
+//            [self setupAutoHeightWithBottomView:_contentImageViewGroup bottomMargin:0];
+            UIView *view = [UIView new];
+            view.backgroundColor = [UIColor blueColor];
+            [self addSubview:view];
+            view.sd_layout
+            .topSpaceToView(_contentTYAttributedLab,5)
+            .leftSpaceToView(self,15)
+            .rightSpaceToView(self,15)
+            .heightIs(50);
+            [self setupAutoHeightWithBottomView:view bottomMargin:10];
         }else {
-            [self setupAutoHeightWithBottomView:_contentTYAttributedLab bottomMargin:0];
+            [self setupAutoHeightWithBottomView:_contentTYAttributedLab bottomMargin:10];
         }
     }
 }
