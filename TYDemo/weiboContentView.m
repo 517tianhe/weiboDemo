@@ -129,7 +129,7 @@
                 [temp addObject:item];
             }];
             _contentImageViewGroup.photoItemArray = temp;
-            [self setupAutoHeightWithBottomView:_contentImageViewGroup bottomMargin:0];
+            [self setupAutoHeightWithBottomView:_contentImageViewGroup bottomMargin:10];
         }else {
             [self setupAutoHeightWithBottomView:_contentTYAttributedLab bottomMargin:0];
         }

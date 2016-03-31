@@ -158,7 +158,7 @@
 {
     TYTextContainer * textContainer=[[TYTextContainer alloc]init];
     textContainer.characterSpacing = 0;
-    textContainer.linesSpacing = 4;
+    textContainer.linesSpacing = 2;
     textContainer.lineBreakMode = kCTLineBreakByWordWrapping;
     textContainer.font = TITLE_FONT_SIZE;
     textContainer.text = self.statusModel.text;
