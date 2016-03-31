@@ -21,15 +21,6 @@
 
 @implementation HZPhotoGroup 
 
-//- (id)initWithFrame:(CGRect)frame
-//{
-//    self = [super initWithFrame:frame];
-//    if (self) {
-//        // 清除图片缓存，便于测试
-//        
-//    }
-//    return self;
-//}
 - (instancetype)init {
     self = [super init];
     if (self) {
