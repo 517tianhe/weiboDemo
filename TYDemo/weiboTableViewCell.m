@@ -92,8 +92,6 @@
     .heightIs(CELL_BOTTOM_HEIGHT);
     
     [self setupAutoHeightWithBottomView:_bottomView bottomMargin:0];
-    
-    
 }
 
 - (void)setHomeCellViewModel:(WBHomeCellViewModel *)homeCellViewModel {
