@@ -165,7 +165,7 @@
     //表情
     for (WBKeywordModel *keyWordModel in self.emotionArray) {
         TYImageStorage *imageStorage = [[TYImageStorage alloc]init];
-        //imageStorage.imageName = keywordModel.url;
+        imageStorage.imageName = keyWordModel.keyword;
         //谨慎缓存image，会增长内存
         imageStorage.image = [[UIImage imageNamed:keyWordModel.url] imageScaledToSize:CGSizeMake(19, 19)];
         imageStorage.range = keyWordModel.range;

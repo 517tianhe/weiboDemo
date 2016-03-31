@@ -33,7 +33,7 @@ typedef enum {
 #define HZPhotoBrowserBackgrounColor [UIColor colorWithRed:0 green:0 blue:0 alpha:1]
 
 // browser中图片间的margin
-#define HZPhotoBrowserImageViewMargin 10
+#define HZPhotoBrowserImageViewMargin 5
 
 // browser中显示图片动画时长
 #define HZPhotoBrowserShowImageAnimationDuration 0.35f

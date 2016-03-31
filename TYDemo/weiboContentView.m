@@ -12,6 +12,12 @@
 #import "HZPhotoGroup.h"
 #import "HZPhotoItem.h"
 #import <HexColors.h>
+
+@interface weiboContentView ()<TYAttributedLabelDelegate>
+
+@end
+
+
 @implementation weiboContentView{
     /**
      *  微博内容
@@ -57,6 +63,9 @@
     [self addSubview:_contentTYAttributedLab];
     [self addSubview:_retweetedView];
     [_retweetedView addSubview:_retweetedTYAttributedLab];
+    
+    _contentTYAttributedLab.delegate = self;
+    _retweetedTYAttributedLab.delegate = self;
     
     
 }
@@ -133,6 +142,25 @@
         }else {
             [self setupAutoHeightWithBottomView:_contentTYAttributedLab bottomMargin:0];
         }
+    }
+}
+
+#pragma mark - TYAttributedLabelDelegate
+
+- (void)attributedLabel:(TYAttributedLabel *)attributedLabel textStorageClicked:(id<TYTextStorageProtocol>)TextRun atPoint:(CGPoint)point
+{
+    NSLog(@"textStorageClickedAtPoint");
+    if ([TextRun isKindOfClass:[TYLinkTextStorage class]]) {
+        
+        id linkStr = ((TYLinkTextStorage*)TextRun).linkData;
+        if ([linkStr isKindOfClass:[NSString class]]) {
+            UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"点击提示" message:linkStr delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+            [alertView show];
+        }
+    }else if ([TextRun isKindOfClass:[TYImageStorage class]]) {
+        TYImageStorage *imageStorage = (TYImageStorage *)TextRun;
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"点击提示" message:[NSString stringWithFormat:@"你点击了%@图片",imageStorage.imageName] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        [alertView show];
     }
 }
 

@@ -10,6 +10,7 @@
 #import <UIView+SDAutoLayout.h>
 #import <UIImageView+WebCache.h>
 #import "WBUserModel.h"
+#import <HexColors.h>
 
 @implementation WBHeadView {
     /**
@@ -75,6 +76,8 @@
     
     _releaseTimeLab = [[UILabel alloc]init];
     _releaseTerminal = [[UILabel alloc]init];
+    _releaseTerminal.textColor = [UIColor hx_colorWithHexRGBAString:@"888888"];
+    _releaseTimeLab.textColor = [UIColor hx_colorWithHexRGBAString:@"888888"];
     _releaseTimeLab.font = SUBTITLE_FONT_SIZE;
     _releaseTerminal.font = SUBTITLE_FONT_SIZE;
     [self addSubview:_releaseTerminal];
@@ -100,13 +103,7 @@
     .rightEqualToView(_contactAvatarView)
     .heightIs(17)
     .widthIs(17);
-//    _imgAvaterType.backgroundColor = [UIColor whiteColor];
-//    _imgAvaterType.layer.masksToBounds = YES;
-//    _imgAvaterType.layer.cornerRadius = CGRectGetWidth(_imgAvaterType.frame)*0.5;
-//    _imgAvaterType.layer.borderColor = [[UIColor whiteColor] CGColor];
-//    _imgAvaterType.layer.borderWidth = 0.5;
-    
-    
+
     _userLabel.sd_layout
     .topEqualToView(_contactAvatarView)
     .leftSpaceToView(_contactAvatarView,15)
