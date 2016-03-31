@@ -21,6 +21,13 @@ http://code4app.com/article/cocoapods-install-usage
 ## ScreenShot
 
 ![image][image-1]
+![image][image-2]
+![image][image-3]
 
 
-[image-1]: https://github.com/517tianhe/weiboDemo/master/1.pic.jpg
+
+[image-1]: http://ww3.sinaimg.cn/mw690/d7605a45gw1f2g6au0fwcg20hs0qou0x.gif
+
+[image-2]: http://ww4.sinaimg.cn/mw690/d7605a45gw1f2g6b2cfzij20k00zkgon.jpg
+
+[image-3]: http://ww1.sinaimg.cn/mw690/d7605a45gw1f2g6b8ii04j20yi1pcaqg.jpg
