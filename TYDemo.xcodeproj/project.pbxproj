@@ -187,22 +187,22 @@
 				83529F981CA2816A0052BD16 /* WBHomeCellViewModel.h */,
 				83529F991CA2816A0052BD16 /* WBHomeCellViewModel.m */,
 			);
-			name = ViewModel;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		83BE5FAA1C99556900A108D2 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				83D7BEEC1C96A5E600E00955 /* UIView+ShortCut.h */,
-				83D7BEED1C96A5E600E00955 /* UIView+ShortCut.m */,
 				83BE5FAB1C9955B900A108D2 /* NSDate+TH.h */,
 				83BE5FAC1C9955B900A108D2 /* NSDate+TH.m */,
 				83D0F3FB1CA3C5BD004415BD /* NSString+Size.h */,
 				83D0F3FC1CA3C5BD004415BD /* NSString+Size.m */,
 				834448FC1CAA66470090196C /* UIImage+ShortCut.h */,
 				834448FD1CAA66470090196C /* UIImage+ShortCut.m */,
+				83D7BEEC1C96A5E600E00955 /* UIView+ShortCut.h */,
+				83D7BEED1C96A5E600E00955 /* UIView+ShortCut.m */,
 			);
-			name = Category;
+			path = Category;
 			sourceTree = "<group>";
 		};
 		83BE5FAE1C99574200A108D2 /* Controller */ = {
@@ -214,44 +214,44 @@
 				83BE5FB11C99581D00A108D2 /* userLoginViewController.h */,
 				83BE5FB21C99581D00A108D2 /* userLoginViewController.m */,
 			);
-			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		83BE5FAF1C99577300A108D2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				83D0F3E51CA37B0D004415BD /* WBBottomView.h */,
+				83D0F3E61CA37B0D004415BD /* WBBottomView.m */,
+				83D0F3E21CA37AFA004415BD /* WBHeadView.h */,
+				83D0F3E31CA37AFA004415BD /* WBHeadView.m */,
+				834448421CA930540090196C /* weiboContentView.h */,
+				834448431CA930540090196C /* weiboContentView.m */,
 				83529F8A1CA26E4B0052BD16 /* weiboTableView.h */,
 				83529F8B1CA26E4B0052BD16 /* weiboTableView.m */,
 				83529F9B1CA288E30052BD16 /* weiboTableViewCell.h */,
 				83529F9C1CA288E30052BD16 /* weiboTableViewCell.m */,
-				83D0F3E21CA37AFA004415BD /* WBHeadView.h */,
-				83D0F3E31CA37AFA004415BD /* WBHeadView.m */,
-				83D0F3E51CA37B0D004415BD /* WBBottomView.h */,
-				83D0F3E61CA37B0D004415BD /* WBBottomView.m */,
-				834448421CA930540090196C /* weiboContentView.h */,
-				834448431CA930540090196C /* weiboContentView.m */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		83BE5FB01C99578E00A108D2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				83529F901CA279280052BD16 /* WBDealing.h */,
 				83529F8D1CA278CF0052BD16 /* WBDataModel.h */,
+				83529F8E1CA278CF0052BD16 /* WBDataModel.m */,
+				83529F901CA279280052BD16 /* WBDealing.h */,
+				8310AB5B1CACD6E700C32925 /* WBEmotionsModel.h */,
+				8310AB5C1CACD6E700C32925 /* WBEmotionsModel.m */,
+				83D0F4011CA3D758004415BD /* WBKeywordModel.h */,
+				83D0F4021CA3D758004415BD /* WBKeywordModel.m */,
 				8310AB5E1CACD7EA00C32925 /* WBLocalEmotionModel.h */,
 				8310AB5F1CACD7EA00C32925 /* WBLocalEmotionModel.m */,
-				83529F8E1CA278CF0052BD16 /* WBDataModel.m */,
 				83529F911CA27B1A0052BD16 /* WBStatusModel.h */,
 				83529F921CA27B1A0052BD16 /* WBStatusModel.m */,
 				83529F941CA27D350052BD16 /* WBUserModel.h */,
 				83529F951CA27D350052BD16 /* WBUserModel.m */,
-				83D0F4011CA3D758004415BD /* WBKeywordModel.h */,
-				83D0F4021CA3D758004415BD /* WBKeywordModel.m */,
-				8310AB5B1CACD6E700C32925 /* WBEmotionsModel.h */,
-				8310AB5C1CACD6E700C32925 /* WBEmotionsModel.m */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		83D0F3E81CA37CC6004415BD /* ptotoBrowser */ = {
@@ -264,10 +264,10 @@
 				83D0F3ED1CA37CC6004415BD /* HZPhotoBrowserView.m */,
 				83D0F3EE1CA37CC6004415BD /* HZPhotoGroup.h */,
 				83D0F3EF1CA37CC6004415BD /* HZPhotoGroup.m */,
-				83FDEF501CABC73B007F52AB /* HZPhotoItemView.h */,
-				83FDEF511CABC73B007F52AB /* HZPhotoItemView.m */,
 				83D0F3F01CA37CC6004415BD /* HZPhotoItem.h */,
 				83D0F3F11CA37CC6004415BD /* HZPhotoItem.m */,
+				83FDEF501CABC73B007F52AB /* HZPhotoItemView.h */,
+				83FDEF511CABC73B007F52AB /* HZPhotoItemView.m */,
 				83D0F3F21CA37CC6004415BD /* HZWaitingView.h */,
 				83D0F3F31CA37CC6004415BD /* HZWaitingView.m */,
 				83D0F3F41CA37CC6004415BD /* whiteplaceholder.png */,
@@ -278,12 +278,12 @@
 		83D7BE871C969A1C00E00955 = {
 			isa = PBXGroup;
 			children = (
+				F5A8466AAE05B5ADB8B54CC3 /* Frameworks */,
+				BDDB80BA73931418DBA1FD9A /* Pods */,
+				83D7BE911C969A1C00E00955 /* Products */,
 				83D7BE921C969A1C00E00955 /* TYDemo */,
 				83D7BEAC1C969A1D00E00955 /* TYDemoTests */,
 				83D7BEB71C969A1D00E00955 /* TYDemoUITests */,
-				83D7BE911C969A1C00E00955 /* Products */,
-				BDDB80BA73931418DBA1FD9A /* Pods */,
-				F5A8466AAE05B5ADB8B54CC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -300,16 +300,16 @@
 		83D7BE921C969A1C00E00955 /* TYDemo */ = {
 			isa = PBXGroup;
 			children = (
-				83D7BE961C969A1C00E00955 /* AppDelegate.h */,
-				83D7BE971C969A1C00E00955 /* AppDelegate.m */,
-				83D7BEEF1C97E08000E00955 /* weiboManage */,
 				83BE5FAA1C99556900A108D2 /* Category */,
-				83D0F3E81CA37CC6004415BD /* ptotoBrowser */,
+				83BE5FAE1C99574200A108D2 /* Controller */,
 				83BE5FB01C99578E00A108D2 /* Model */,
+				83D7BE931C969A1C00E00955 /* Supporting Files */,
 				83BE5FAF1C99577300A108D2 /* View */,
 				83529F971CA280780052BD16 /* ViewModel */,
-				83BE5FAE1C99574200A108D2 /* Controller */,
-				83D7BE931C969A1C00E00955 /* Supporting Files */,
+				83D0F3E81CA37CC6004415BD /* ptotoBrowser */,
+				83D7BEEF1C97E08000E00955 /* weiboManage */,
+				83D7BE961C969A1C00E00955 /* AppDelegate.h */,
+				83D7BE971C969A1C00E00955 /* AppDelegate.m */,
 			);
 			path = TYDemo;
 			sourceTree = "<group>";
@@ -317,24 +317,24 @@
 		83D7BE931C969A1C00E00955 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				83D7BE9F1C969A1C00E00955 /* Assets.xcassets */,
+				83D7BEA41C969A1C00E00955 /* Info.plist */,
+				83D7BEA11C969A1C00E00955 /* LaunchScreen.storyboard */,
+				83D7BE9C1C969A1C00E00955 /* Main.storyboard */,
+				83D7BEFA1C98045D00E00955 /* WeiboSDKDemo.pch */,
+				8310AB631CACF0C700C32925 /* default_info.plist */,
 				8310AB671CACF0E200C32925 /* emoticons.plist */,
 				8310AB651CACF0D800C32925 /* lxh_info.plist */,
-				8310AB631CACF0C700C32925 /* default_info.plist */,
-				83D7BE9C1C969A1C00E00955 /* Main.storyboard */,
-				83D7BEA11C969A1C00E00955 /* LaunchScreen.storyboard */,
-				83D7BEA41C969A1C00E00955 /* Info.plist */,
-				83D7BE9F1C969A1C00E00955 /* Assets.xcassets */,
 				83D7BE941C969A1C00E00955 /* main.m */,
-				83D7BEFA1C98045D00E00955 /* WeiboSDKDemo.pch */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		83D7BEAC1C969A1D00E00955 /* TYDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				83D7BEAD1C969A1D00E00955 /* TYDemoTests.m */,
 				83D7BEAF1C969A1D00E00955 /* Info.plist */,
+				83D7BEAD1C969A1D00E00955 /* TYDemoTests.m */,
 			);
 			path = TYDemoTests;
 			sourceTree = "<group>";
@@ -342,8 +342,8 @@
 		83D7BEB71C969A1D00E00955 /* TYDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				83D7BEB81C969A1D00E00955 /* TYDemoUITests.m */,
 				83D7BEBA1C969A1D00E00955 /* Info.plist */,
+				83D7BEB81C969A1D00E00955 /* TYDemoUITests.m */,
 			);
 			path = TYDemoUITests;
 			sourceTree = "<group>";
@@ -351,14 +351,14 @@
 		83D7BEEF1C97E08000E00955 /* weiboManage */ = {
 			isa = PBXGroup;
 			children = (
-				83D0F3FE1CA3C8FD004415BD /* WBParser.h */,
-				83D0F3FF1CA3C8FD004415BD /* WBParser.m */,
-				83D7BEF71C97FFFD00E00955 /* weiboManage.h */,
-				83D7BEF81C97FFFE00E00955 /* weiboManage.m */,
-				83BE5FA71C99513C00A108D2 /* wbSession.h */,
-				83BE5FA81C99513C00A108D2 /* wbSession.m */,
 				8310AB581CACD5EA00C32925 /* WBEmotionManage.h */,
 				8310AB591CACD5EA00C32925 /* WBEmotionManage.m */,
+				83D0F3FE1CA3C8FD004415BD /* WBParser.h */,
+				83D0F3FF1CA3C8FD004415BD /* WBParser.m */,
+				83BE5FA71C99513C00A108D2 /* wbSession.h */,
+				83BE5FA81C99513C00A108D2 /* wbSession.m */,
+				83D7BEF71C97FFFD00E00955 /* weiboManage.h */,
+				83D7BEF81C97FFFE00E00955 /* weiboManage.m */,
 			);
 			path = weiboManage;
 			sourceTree = "<group>";
@@ -366,12 +366,12 @@
 		83FDEF4C1CABB984007F52AB /* photo */ = {
 			isa = PBXGroup;
 			children = (
-				83FDEF491CABB81E007F52AB /* photoTableViewController.h */,
-				83FDEF4A1CABB81E007F52AB /* photoTableViewController.m */,
 				83FDEF4D1CABB9A5007F52AB /* phTableViewCell.h */,
 				83FDEF4E1CABB9A5007F52AB /* phTableViewCell.m */,
+				83FDEF491CABB81E007F52AB /* photoTableViewController.h */,
+				83FDEF4A1CABB81E007F52AB /* photoTableViewController.m */,
 			);
-			name = photo;
+			path = photo;
 			sourceTree = "<group>";
 		};
 		BDDB80BA73931418DBA1FD9A /* Pods */ = {
@@ -649,6 +649,7 @@
 				83D7BE9D1C969A1C00E00955 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		83D7BEA11C969A1C00E00955 /* LaunchScreen.storyboard */ = {
@@ -657,6 +658,7 @@
 				83D7BEA21C969A1C00E00955 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -748,8 +750,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = TYDemo/WeiboSDKDemo.pch;
-				INFOPLIST_FILE = TYDemo/Info.plist;
+				GCC_PREFIX_HEADER = "TYDemo/Supporting Files/WeiboSDKDemo.pch";
+				INFOPLIST_FILE = "TYDemo/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sina.weibo.SNWeiboSDKDemo;
@@ -763,8 +765,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = TYDemo/WeiboSDKDemo.pch;
-				INFOPLIST_FILE = TYDemo/Info.plist;
+				GCC_PREFIX_HEADER = "TYDemo/Supporting Files/WeiboSDKDemo.pch";
+				INFOPLIST_FILE = "TYDemo/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sina.weibo.SNWeiboSDKDemo;
