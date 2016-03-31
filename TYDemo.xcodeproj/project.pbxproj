@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4E60796A2FDF568C15E0CF65 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 698CAD8D24DD575D87656063 /* libPods.a */; };
+		8310AB5A1CACD5EA00C32925 /* WBEmotionManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8310AB591CACD5EA00C32925 /* WBEmotionManage.m */; };
+		8310AB5D1CACD6E700C32925 /* WBEmotionsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8310AB5C1CACD6E700C32925 /* WBEmotionsModel.m */; };
+		8310AB601CACD7EA00C32925 /* WBLocalEmotionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8310AB5F1CACD7EA00C32925 /* WBLocalEmotionModel.m */; };
+		8310AB641CACF0C700C32925 /* default_info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8310AB631CACF0C700C32925 /* default_info.plist */; };
+		8310AB661CACF0D800C32925 /* lxh_info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8310AB651CACF0D800C32925 /* lxh_info.plist */; };
+		8310AB681CACF0E200C32925 /* emoticons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8310AB671CACF0E200C32925 /* emoticons.plist */; };
 		834448441CA930540090196C /* weiboContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 834448431CA930540090196C /* weiboContentView.m */; };
 		834448FE1CAA66470090196C /* UIImage+ShortCut.m in Sources */ = {isa = PBXBuildFile; fileRef = 834448FD1CAA66470090196C /* UIImage+ShortCut.m */; };
 		83529F8C1CA26E4B0052BD16 /* weiboTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83529F8B1CA26E4B0052BD16 /* weiboTableView.m */; };
@@ -30,7 +36,6 @@
 		83D0F3FD1CA3C5BD004415BD /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D0F3FC1CA3C5BD004415BD /* NSString+Size.m */; };
 		83D0F4001CA3C8FD004415BD /* WBParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D0F3FF1CA3C8FD004415BD /* WBParser.m */; };
 		83D0F4031CA3D758004415BD /* WBKeywordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D0F4021CA3D758004415BD /* WBKeywordModel.m */; };
-		83D0F4061CA3D7D5004415BD /* WBEmotionsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D0F4051CA3D7D5004415BD /* WBEmotionsModel.m */; };
 		83D7BE951C969A1C00E00955 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D7BE941C969A1C00E00955 /* main.m */; };
 		83D7BE981C969A1C00E00955 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D7BE971C969A1C00E00955 /* AppDelegate.m */; };
 		83D7BE9B1C969A1C00E00955 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D7BE9A1C969A1C00E00955 /* ViewController.m */; };
@@ -65,6 +70,15 @@
 
 /* Begin PBXFileReference section */
 		698CAD8D24DD575D87656063 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8310AB581CACD5EA00C32925 /* WBEmotionManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBEmotionManage.h; sourceTree = "<group>"; };
+		8310AB591CACD5EA00C32925 /* WBEmotionManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBEmotionManage.m; sourceTree = "<group>"; };
+		8310AB5B1CACD6E700C32925 /* WBEmotionsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBEmotionsModel.h; sourceTree = "<group>"; };
+		8310AB5C1CACD6E700C32925 /* WBEmotionsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBEmotionsModel.m; sourceTree = "<group>"; };
+		8310AB5E1CACD7EA00C32925 /* WBLocalEmotionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLocalEmotionModel.h; sourceTree = "<group>"; };
+		8310AB5F1CACD7EA00C32925 /* WBLocalEmotionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBLocalEmotionModel.m; sourceTree = "<group>"; };
+		8310AB631CACF0C700C32925 /* default_info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default_info.plist; sourceTree = "<group>"; };
+		8310AB651CACF0D800C32925 /* lxh_info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lxh_info.plist; sourceTree = "<group>"; };
+		8310AB671CACF0E200C32925 /* emoticons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emoticons.plist; sourceTree = "<group>"; };
 		834448421CA930540090196C /* weiboContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weiboContentView.h; sourceTree = "<group>"; };
 		834448431CA930540090196C /* weiboContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weiboContentView.m; sourceTree = "<group>"; };
 		834448FC1CAA66470090196C /* UIImage+ShortCut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ShortCut.h"; sourceTree = "<group>"; };
@@ -110,8 +124,6 @@
 		83D0F3FF1CA3C8FD004415BD /* WBParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBParser.m; sourceTree = "<group>"; };
 		83D0F4011CA3D758004415BD /* WBKeywordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBKeywordModel.h; sourceTree = "<group>"; };
 		83D0F4021CA3D758004415BD /* WBKeywordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBKeywordModel.m; sourceTree = "<group>"; };
-		83D0F4041CA3D7D5004415BD /* WBEmotionsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBEmotionsModel.h; sourceTree = "<group>"; };
-		83D0F4051CA3D7D5004415BD /* WBEmotionsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBEmotionsModel.m; sourceTree = "<group>"; };
 		83D7BE901C969A1C00E00955 /* TYDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D7BE941C969A1C00E00955 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		83D7BE961C969A1C00E00955 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -227,6 +239,8 @@
 			children = (
 				83529F901CA279280052BD16 /* WBDealing.h */,
 				83529F8D1CA278CF0052BD16 /* WBDataModel.h */,
+				8310AB5E1CACD7EA00C32925 /* WBLocalEmotionModel.h */,
+				8310AB5F1CACD7EA00C32925 /* WBLocalEmotionModel.m */,
 				83529F8E1CA278CF0052BD16 /* WBDataModel.m */,
 				83529F911CA27B1A0052BD16 /* WBStatusModel.h */,
 				83529F921CA27B1A0052BD16 /* WBStatusModel.m */,
@@ -234,8 +248,8 @@
 				83529F951CA27D350052BD16 /* WBUserModel.m */,
 				83D0F4011CA3D758004415BD /* WBKeywordModel.h */,
 				83D0F4021CA3D758004415BD /* WBKeywordModel.m */,
-				83D0F4041CA3D7D5004415BD /* WBEmotionsModel.h */,
-				83D0F4051CA3D7D5004415BD /* WBEmotionsModel.m */,
+				8310AB5B1CACD6E700C32925 /* WBEmotionsModel.h */,
+				8310AB5C1CACD6E700C32925 /* WBEmotionsModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -303,6 +317,9 @@
 		83D7BE931C969A1C00E00955 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8310AB671CACF0E200C32925 /* emoticons.plist */,
+				8310AB651CACF0D800C32925 /* lxh_info.plist */,
+				8310AB631CACF0C700C32925 /* default_info.plist */,
 				83D7BE9C1C969A1C00E00955 /* Main.storyboard */,
 				83D7BEA11C969A1C00E00955 /* LaunchScreen.storyboard */,
 				83D7BEA41C969A1C00E00955 /* Info.plist */,
@@ -340,6 +357,8 @@
 				83D7BEF81C97FFFE00E00955 /* weiboManage.m */,
 				83BE5FA71C99513C00A108D2 /* wbSession.h */,
 				83BE5FA81C99513C00A108D2 /* wbSession.m */,
+				8310AB581CACD5EA00C32925 /* WBEmotionManage.h */,
+				8310AB591CACD5EA00C32925 /* WBEmotionManage.m */,
 			);
 			path = weiboManage;
 			sourceTree = "<group>";
@@ -480,8 +499,11 @@
 			files = (
 				83D7BEA31C969A1C00E00955 /* LaunchScreen.storyboard in Resources */,
 				83D7BEA01C969A1C00E00955 /* Assets.xcassets in Resources */,
+				8310AB641CACF0C700C32925 /* default_info.plist in Resources */,
+				8310AB681CACF0E200C32925 /* emoticons.plist in Resources */,
 				83D7BE9E1C969A1C00E00955 /* Main.storyboard in Resources */,
 				83D0F3FA1CA37CC6004415BD /* whiteplaceholder.png in Resources */,
+				8310AB661CACF0D800C32925 /* lxh_info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +576,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8310AB601CACD7EA00C32925 /* WBLocalEmotionModel.m in Sources */,
 				83D0F3F61CA37CC6004415BD /* HZPhotoBrowserView.m in Sources */,
 				83D0F3F91CA37CC6004415BD /* HZWaitingView.m in Sources */,
 				83D0F4031CA3D758004415BD /* WBKeywordModel.m in Sources */,
@@ -562,8 +585,10 @@
 				834448441CA930540090196C /* weiboContentView.m in Sources */,
 				83D0F3E71CA37B0D004415BD /* WBBottomView.m in Sources */,
 				83529F9D1CA288E30052BD16 /* weiboTableViewCell.m in Sources */,
+				8310AB5A1CACD5EA00C32925 /* WBEmotionManage.m in Sources */,
 				83D7BEEE1C96A5E600E00955 /* UIView+ShortCut.m in Sources */,
 				83D0F3F71CA37CC6004415BD /* HZPhotoGroup.m in Sources */,
+				8310AB5D1CACD6E700C32925 /* WBEmotionsModel.m in Sources */,
 				83D7BE9B1C969A1C00E00955 /* ViewController.m in Sources */,
 				83BE5FAD1C9955B900A108D2 /* NSDate+TH.m in Sources */,
 				83529F961CA27D350052BD16 /* WBUserModel.m in Sources */,
@@ -581,7 +606,6 @@
 				83FDEF4F1CABB9A5007F52AB /* phTableViewCell.m in Sources */,
 				83D7BE951C969A1C00E00955 /* main.m in Sources */,
 				83529F9A1CA2816A0052BD16 /* WBHomeCellViewModel.m in Sources */,
-				83D0F4061CA3D7D5004415BD /* WBEmotionsModel.m in Sources */,
 				83D7BEF91C97FFFE00E00955 /* weiboManage.m in Sources */,
 				834448FE1CAA66470090196C /* UIImage+ShortCut.m in Sources */,
 			);

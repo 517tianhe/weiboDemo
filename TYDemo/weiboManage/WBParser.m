@@ -8,6 +8,7 @@
 
 #import "WBParser.h"
 #import "WBKeywordModel.h"
+#import "WBEmotionManage.h"
 #import "WBEmotionsModel.h"
 
 
@@ -47,9 +48,9 @@ static NSString *urlRegular=@"(http|https)://(t.cn/|weibo.com/)+(([a-zA-Z0-9/])*
     {
         WBKeywordModel *keywordModel=[[WBKeywordModel alloc]init];
         NSString *keyword = [self replacementStringForResult:match inString:string regularExpressionWithPattern:iconRegular];
-        keywordModel.keyword=keyword;
+        keywordModel.keyword = keyword;
         keywordModel.range=[match range];
-        //keywordModel.url = [WBEmotionManage pathForEmotionCode:keyword];
+        keywordModel.url = [WBEmotionManage pathForEmotionCode:keyword];
         if (keywordModel.url!=nil)
         {
             [array addObject:keywordModel];
