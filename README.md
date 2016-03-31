@@ -23,4 +23,4 @@ http://code4app.com/article/cocoapods-install-usage
 ![image][image-1]
 
 
-[image-1]: https://github.com/517tianhe/weiboDemo/master/IMG_0388.PNG
+[image-1]: https://github.com/517tianhe/weiboDemo/master/1.pic.jpg
