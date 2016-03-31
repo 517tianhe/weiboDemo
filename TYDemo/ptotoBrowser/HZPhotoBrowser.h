@@ -17,7 +17,6 @@
 
 - (UIImage *)photoBrowser:(HZPhotoBrowser *)browser placeholderImageForIndex:(NSInteger)index;
 
-- (void)phototBrowserClosedImageForIndex:(NSInteger)index;
 
 @optional
 

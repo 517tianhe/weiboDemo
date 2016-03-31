@@ -91,7 +91,7 @@
     .rightEqualToView(contentView)
     .heightIs(CELL_BOTTOM_HEIGHT);
     
-    [self setupAutoHeightWithBottomView:_bottomView bottomMargin:10];
+    [self setupAutoHeightWithBottomView:_bottomView bottomMargin:0];
     
     
 }

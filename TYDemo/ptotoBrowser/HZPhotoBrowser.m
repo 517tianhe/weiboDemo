@@ -9,6 +9,7 @@
 #import "HZPhotoBrowser.h"
 #import "UIImageView+WebCache.h"
 #import "HZPhotoBrowserView.h"
+#import "HZPhotoItemView.h"
  
 //  ============在这里方便配置样式相关设置===========
 
@@ -384,6 +385,13 @@
 - (void)photoClick:(UITapGestureRecognizer *)recognizer
 {
     HZPhotoBrowserView *currentView = _scrollView.subviews[self.currentImageIndex];
+    UIImageView *currentImageView = currentView.imageview;
+    NSUInteger currentIndex = currentImageView.tag;
+    for (HZPhotoItemView *view in self.sourceImagesContainerView.subviews) {
+        if (view.btn.tag == currentIndex) {
+            view.photo.hidden = YES;
+        }
+    }
     [currentView.scrollview setZoomScale:1.0 animated:YES];//还原
     _indexLabel.hidden = YES;
     _saveButton.hidden = YES;
@@ -436,8 +444,10 @@
     [UIView animateWithDuration:HZPhotoBrowserHideImageAnimationDuration animations:^{
         tempImageView.frame = targetTemp;
     } completion:^(BOOL finished) {
-        if ([self.delegate respondsToSelector:@selector(phototBrowserClosedImageForIndex:)]) {
-            [self.delegate phototBrowserClosedImageForIndex:currentIndex];
+        for (HZPhotoItemView *view in self.sourceImagesContainerView.subviews) {
+            if (view.btn.tag == currentIndex) {
+                view.photo.hidden = NO;
+            }
         }
         [_contentView removeFromSuperview];
         [tempImageView removeFromSuperview];

@@ -45,12 +45,13 @@
 
 - (void)setup {
 
-    //self.frame = CGRectMake(0, 0, SCREEN_WIDTH, 300);
-    self.backgroundColor = [UIColor yellowColor];
+   // self.backgroundColor = [UIColor yellowColor];
     _contentTYAttributedLab = [[TYAttributedLabel alloc]init];
+        _contentTYAttributedLab.backgroundColor = [UIColor clearColor];
     _retweetedView = [UIView new];
     _retweetedView.backgroundColor = [UIColor hx_colorWithHexRGBAString:@"f5f2f3"];
     _retweetedTYAttributedLab = [[TYAttributedLabel alloc]init];
+    _retweetedTYAttributedLab.backgroundColor = [UIColor clearColor];
     _contentImageViewGroup = [[HZPhotoGroup alloc]init];
     
     [self addSubview:_contentTYAttributedLab];
@@ -69,11 +70,9 @@
 
 
 - (void)setHomeCellViewModel:(WBHomeCellViewModel *)homeCellViewModel {
-//    [self setup];
     _homeCellViewModel = homeCellViewModel;
     
     _contentTYAttributedLab.textContainer = homeCellViewModel.textContainer;
-    _contentTYAttributedLab.backgroundColor = [UIColor clearColor];
     _contentTYAttributedLab.sd_layout
     .topEqualToView(self)
     .leftSpaceToView(self,CELL_SIDEMARGIN)
@@ -100,47 +99,39 @@
             [_retweetedView addSubview: _contentImageViewGroup];
             _contentImageViewGroup.sd_layout
             .topSpaceToView(_retweetedTYAttributedLab,10)
-            .leftSpaceToView(_retweetedView,15);
+            .leftSpaceToView(_retweetedView,15)
+            .rightSpaceToView(_retweetedView,15);
             NSMutableArray *temp = [NSMutableArray array];
-            [retweetedViewModel.statusModel.pic_urls enumerateObjectsUsingBlock:^(NSDictionary *dic, NSUInteger idx, BOOL *stop) {
+            [retweetedViewModel.statusModel.pic_urls enumerateObjectsUsingBlock:^(NSString *url, NSUInteger idx, BOOL *stop) {
                 HZPhotoItem *item = [[HZPhotoItem alloc] init];
-                item.thumbnail_pic = dic[@"thumbnail_pic"];
+                item.thumbnail_pic = url;
                 [temp addObject:item];
             }];
             _contentImageViewGroup.photoItemArray = [temp copy];
             
-            [_retweetedView setupAutoHeightWithBottomView:_contentImageViewGroup bottomMargin:0];
+            [_retweetedView setupAutoHeightWithBottomView:_contentImageViewGroup bottomMargin:10];
         }else {
             [_retweetedView setupAutoHeightWithBottomView:_retweetedTYAttributedLab bottomMargin:5];
         }
-        [self setupAutoHeightWithBottomView:_retweetedView bottomMargin:10];
+        [self setupAutoHeightWithBottomView:_retweetedView bottomMargin:0];
     }else {
         [_retweetedView removeFromSuperview];
         if (homeCellViewModel.statusModel.pic_urls.count > 0) {
-//            [self addSubview:_contentImageViewGroup];
-//           // _contentImageViewGroup.backgroundColor = [UIColor blueColor];
-//            _contentImageViewGroup.sd_layout
-//            .topSpaceToView(_contentTYAttributedLab,5)
-//            .leftSpaceToView(self,15);
-//            NSMutableArray *temp = [NSMutableArray array];
-//            [homeCellViewModel.statusModel.pic_urls enumerateObjectsUsingBlock:^(NSDictionary *dic, NSUInteger idx, BOOL *stop) {
-//                HZPhotoItem *item = [[HZPhotoItem alloc] init];
-//                item.thumbnail_pic = dic[@"thumbnail_pic"];
-//                [temp addObject:item];
-//            }];
-//            _contentImageViewGroup.photoItemArray = temp;
-//            [self setupAutoHeightWithBottomView:_contentImageViewGroup bottomMargin:0];
-            UIView *view = [UIView new];
-            view.backgroundColor = [UIColor blueColor];
-            [self addSubview:view];
-            view.sd_layout
+            [self addSubview:_contentImageViewGroup];
+            _contentImageViewGroup.sd_layout
             .topSpaceToView(_contentTYAttributedLab,5)
             .leftSpaceToView(self,15)
-            .rightSpaceToView(self,15)
-            .heightIs(50);
-            [self setupAutoHeightWithBottomView:view bottomMargin:10];
+            .rightSpaceToView(self,15);
+            NSMutableArray *temp = [NSMutableArray array];
+            [homeCellViewModel.statusModel.pic_urls enumerateObjectsUsingBlock:^(NSString *url, NSUInteger idx, BOOL *stop) {
+                HZPhotoItem *item = [[HZPhotoItem alloc] init];
+                item.thumbnail_pic = url;
+                [temp addObject:item];
+            }];
+            _contentImageViewGroup.photoItemArray = temp;
+            [self setupAutoHeightWithBottomView:_contentImageViewGroup bottomMargin:0];
         }else {
-            [self setupAutoHeightWithBottomView:_contentTYAttributedLab bottomMargin:10];
+            [self setupAutoHeightWithBottomView:_contentTYAttributedLab bottomMargin:0];
         }
     }
 }

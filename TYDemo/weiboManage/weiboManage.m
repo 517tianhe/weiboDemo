@@ -34,7 +34,7 @@
                           @"access_token":session.accessToken,
                           @"since_id":@"0",
                           @"max_id":@"0",
-                          @"count":@"10",
+                          @"count":@"100",
                           @"page":[NSString stringWithFormat:@"%zd",page],
                           @"base_app":@"0",
                           @"feature":@"0",

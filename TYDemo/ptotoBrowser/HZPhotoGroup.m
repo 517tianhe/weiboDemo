@@ -134,8 +134,6 @@
 
 - (void)buttonClick:(UIButton *)button
 {
-    HZPhotoItemView *itemView = self.subviews[button.tag];
-    itemView.photo.hidden = YES;
     //启动图片浏览器
     HZPhotoBrowser *browser = [[HZPhotoBrowser alloc] init];
     browser.sourceImagesContainerView = self; // 原图的父控件
@@ -163,8 +161,4 @@
     return [NSURL URLWithString:urlStr];
 }
 
-- (void)phototBrowserClosedImageForIndex:(NSInteger)index {
-    HZPhotoItemView *itemView = self.subviews[index];
-    itemView.photo.hidden = NO;
-}
 @end
