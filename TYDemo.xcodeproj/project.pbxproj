@@ -79,6 +79,8 @@
 		8310AB631CACF0C700C32925 /* default_info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default_info.plist; sourceTree = "<group>"; };
 		8310AB651CACF0D800C32925 /* lxh_info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lxh_info.plist; sourceTree = "<group>"; };
 		8310AB671CACF0E200C32925 /* emoticons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emoticons.plist; sourceTree = "<group>"; };
+		833929401CAE1065008A200A /* MGZoweeSaleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGZoweeSaleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8339294B1CAE1065008A200A /* MGZoweeSaleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGZoweeSaleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		834448421CA930540090196C /* weiboContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weiboContentView.h; sourceTree = "<group>"; };
 		834448431CA930540090196C /* weiboContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weiboContentView.m; sourceTree = "<group>"; };
 		834448FC1CAA66470090196C /* UIImage+ShortCut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ShortCut.h"; sourceTree = "<group>"; };
@@ -156,6 +158,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8339293D1CAE1065008A200A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		833929481CAE1065008A200A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		83D7BE8D1C969A1C00E00955 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,6 +309,8 @@
 				83D7BE901C969A1C00E00955 /* TYDemo.app */,
 				83D7BEA91C969A1D00E00955 /* TYDemoTests.xctest */,
 				83D7BEB41C969A1D00E00955 /* TYDemoUITests.xctest */,
+				833929401CAE1065008A200A /* MGZoweeSaleTests.xctest */,
+				8339294B1CAE1065008A200A /* MGZoweeSaleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -394,6 +412,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8339293F1CAE1065008A200A /* MGZoweeSaleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 833929591CAE1065008A200A /* Build configuration list for PBXNativeTarget "MGZoweeSaleTests" */;
+			buildPhases = (
+				8339293C1CAE1065008A200A /* Sources */,
+				8339293D1CAE1065008A200A /* Frameworks */,
+				8339293E1CAE1065008A200A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MGZoweeSaleTests;
+			productName = MGZoweeSaleTests;
+			productReference = 833929401CAE1065008A200A /* MGZoweeSaleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8339294A1CAE1065008A200A /* MGZoweeSaleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8339295A1CAE1065008A200A /* Build configuration list for PBXNativeTarget "MGZoweeSaleUITests" */;
+			buildPhases = (
+				833929471CAE1065008A200A /* Sources */,
+				833929481CAE1065008A200A /* Frameworks */,
+				833929491CAE1065008A200A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MGZoweeSaleUITests;
+			productName = MGZoweeSaleUITests;
+			productReference = 8339294B1CAE1065008A200A /* MGZoweeSaleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		83D7BE8F1C969A1C00E00955 /* TYDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83D7BEBD1C969A1D00E00955 /* Build configuration list for PBXNativeTarget "TYDemo" */;
@@ -459,6 +511,14 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = TH;
 				TargetAttributes = {
+					8339293F1CAE1065008A200A = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 833929241CAE1064008A200A;
+					};
+					8339294A1CAE1065008A200A = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 833929241CAE1064008A200A;
+					};
 					83D7BE8F1C969A1C00E00955 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -488,11 +548,27 @@
 				83D7BE8F1C969A1C00E00955 /* TYDemo */,
 				83D7BEA81C969A1D00E00955 /* TYDemoTests */,
 				83D7BEB31C969A1D00E00955 /* TYDemoUITests */,
+				8339293F1CAE1065008A200A /* MGZoweeSaleTests */,
+				8339294A1CAE1065008A200A /* MGZoweeSaleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8339293E1CAE1065008A200A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		833929491CAE1065008A200A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		83D7BE8E1C969A1C00E00955 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -572,6 +648,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8339293C1CAE1065008A200A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		833929471CAE1065008A200A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		83D7BE8C1C969A1C00E00955 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -664,6 +754,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		833929541CAE1065008A200A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MGZoweeSaleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = i.e.com.zowee.MGZoweeSaleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MGZoweeSale.app/MGZoweeSale";
+			};
+			name = Debug;
+		};
+		833929551CAE1065008A200A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MGZoweeSaleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = i.e.com.zowee.MGZoweeSaleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MGZoweeSale.app/MGZoweeSale";
+			};
+			name = Release;
+		};
+		833929561CAE1065008A200A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MGZoweeSaleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = i.e.com.zowee.MGZoweeSaleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MGZoweeSale;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		833929571CAE1065008A200A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MGZoweeSaleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = i.e.com.zowee.MGZoweeSaleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MGZoweeSale;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 		83D7BEBB1C969A1D00E00955 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -825,6 +963,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		833929591CAE1065008A200A /* Build configuration list for PBXNativeTarget "MGZoweeSaleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				833929541CAE1065008A200A /* Debug */,
+				833929551CAE1065008A200A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8339295A1CAE1065008A200A /* Build configuration list for PBXNativeTarget "MGZoweeSaleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				833929561CAE1065008A200A /* Debug */,
+				833929571CAE1065008A200A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		83D7BE8B1C969A1C00E00955 /* Build configuration list for PBXProject "TYDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

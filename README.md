@@ -26,8 +26,8 @@ http://code4app.com/article/cocoapods-install-usage
 ## ScreenShot
 
 ![](http://ww3.sinaimg.cn/mw690/d7605a45gw1f2gxyugnl2g20a00dc1kx.gif)
-![](http://ww4.sinaimg.cn/mw690/d7605a45gw1f2g6b2cfzij20k00zkgon.jpg)
-![](http://ww1.sinaimg.cn/mw690/d7605a45gw1f2g6b8ii04j20yi1pcaqg.jpg)
+![](http://ww4.sinaimg.cn/mw690/d7605a45gw1f2h1tia86aj207i0dcdh2.jpg)![](http://ww4.sinaimg.cn/mw690/d7605a45gw1f2h1tiij7vj207i0dcjsv.jpg)
+![](http://ww1.sinaimg.cn/mw690/d7605a45gw1f2h1tih0tbj207i0dcq4d.jpg)![](http://ww1.sinaimg.cn/mw690/d7605a45gw1f2h1tis4lij207i0dcmyj.jpg)
 
 
 

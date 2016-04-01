@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MGZoweeSale.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 		<key>TYDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>833929241CAE1064008A200A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8339293F1CAE1065008A200A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8339294A1CAE1065008A200A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>83D7BE8F1C969A1C00E00955</key>
 		<dict>
 			<key>primary</key>

@@ -26,9 +26,17 @@
 
 
 @interface HZPhotoBrowser : UIView <UIScrollViewDelegate>
-
+/**
+ *  原图片的视图
+ */
 @property (nonatomic, weak) UIView *sourceImagesContainerView;
+/**
+ *  选中图片的编号
+ */
 @property (nonatomic, assign) int currentImageIndex;
+/**
+ *  图片总数
+ */
 @property (nonatomic, assign) NSInteger imageCount;
 
 @property (nonatomic, weak) id<HZPhotoBrowserDelegate> delegate;
